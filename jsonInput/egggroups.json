@@ -1,0 +1,47 @@
+{
+  "amorphous": {
+    "index": 11
+  },
+  "bug": {
+    "index": 3
+  },
+  "ditto": {
+    "index": 13
+  },
+  "dragon": {
+    "index": 14
+  },
+  "fairy": {
+    "index": 6
+  },
+  "field": {
+    "index": 5
+  },
+  "flying": {
+    "index": 4
+  },
+  "grass": {
+    "index": 7
+  },
+  "human-like": {
+    "index": 8
+  },
+  "mineral": {
+    "index": 10
+  },
+  "monster": {
+    "index": 1
+  },
+  "undiscovered": {
+    "index": 15
+  },
+  "water 1": {
+    "index": 2
+  },
+  "water 2": {
+    "index": 12
+  },
+  "water 3": {
+    "index": 9
+  }
+}

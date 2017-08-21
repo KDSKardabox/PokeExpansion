@@ -1,0 +1,20 @@
+{
+  "erratic": {
+    "index": 1
+  },
+  "fast": {
+    "index": 4
+  },
+  "fluctuating": {
+    "index": 2
+  },
+  "medium_fast": {
+    "index": 0
+  },
+  "medium_slow": {
+    "index": 3
+  },
+  "slow": {
+    "index": 5
+  }
+}

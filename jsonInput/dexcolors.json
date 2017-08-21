@@ -1,0 +1,32 @@
+{
+  "black": {
+    "index": 4
+  },
+  "blue": {
+    "index": 1
+  },
+  "brown": {
+    "index": 5
+  },
+  "gray": {
+    "index": 7
+  },
+  "green": {
+    "index": 3
+  },
+  "pink": {
+    "index": 9
+  },
+  "purple": {
+    "index": 6
+  },
+  "red": {
+    "index": 0
+  },
+  "white": {
+    "index": 8
+  },
+  "yellow": {
+    "index": 2
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "bug": {
+    "index": 6
+  },
+  "dark": {
+    "index": 17
+  },
+  "dragon": {
+    "index": 16
+  },
+  "egg": {
+    "index": 9
+  },
+  "electric": {
+    "index": 13
+  },
+  "fairy": {
+    "index": 23
+  },
+  "fighting": {
+    "index": 1
+  },
+  "fire": {
+    "index": 10
+  },
+  "flying": {
+    "index": 2
+  },
+  "ghost": {
+    "index": 7
+  },
+  "grass": {
+    "index": 12
+  },
+  "ground": {
+    "index": 4
+  },
+  "ice": {
+    "index": 15
+  },
+  "normal": {
+    "index": 0
+  },
+  "poison": {
+    "index": 3
+  },
+  "psychic": {
+    "index": 14
+  },
+  "rock": {
+    "index": 5
+  },
+  "steel": {
+    "index": 8
+  },
+  "water": {
+    "index": 11
+  }
+}
