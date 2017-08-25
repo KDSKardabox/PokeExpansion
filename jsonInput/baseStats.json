@@ -37810,7 +37810,7 @@
       "flying"
     ]
   },
-  "arceus": {
+  "arceusfighting": {
     "abilities": {
       "primary": "multitype"
     },
@@ -37852,7 +37852,7 @@
       "fighting"
     ]
   },
-  "arceusfighting": {
+  "arceusflying": {
     "abilities": {
       "primary": "multitype"
     },

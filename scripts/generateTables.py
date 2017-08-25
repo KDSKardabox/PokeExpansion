@@ -14,7 +14,7 @@ formatStr = formatStr + '        /* type1 */        {},\n'
 formatStr = formatStr + '        /* type2 */        {},\n'
 formatStr = formatStr + '        /* catch_rate */   {},\n'
 formatStr = formatStr + '        /* exp_yield */    {},\n'
-formatStr = formatStr + '        /* evs */          {},{},{},{},{},{}\n'
+formatStr = formatStr + '        /* evs */          {},{},{},{},{},{},\n'
 formatStr = formatStr + '        /* item1 */        {},\n'
 formatStr = formatStr + '        /* item2 */        {},\n'
 formatStr = formatStr + '        /* gender_ratio */ {},\n'
@@ -29,7 +29,7 @@ formatStr = formatStr + '        /* flee_rate */    {},\n'
 formatStr = formatStr + '        /* dex_colour */   {},{},\n'
 formatStr = formatStr + '        /* hidden */       {},\n'
 formatStr = formatStr + '        /* padding2 */     {}\n'
-formatStr = formatStr + '    }}\n'
+formatStr = formatStr + '    }},\n'
 
 
 
@@ -55,17 +55,24 @@ with open('jsonInput\\dexcolors.json','r') as jsonFile:
 with open('jsonInput\\baseStats.json','r') as jsonFile:
         baseStatsDataSet = json.load(jsonFile)
 
+with open('jsonInput\\dexData.json','r') as jsonFile:
+        dexDataSet = json.load(jsonFile)
+
 with open('jsonInput\\pokemonSlotMaster.json','r') as jsonFile:
         masterSlots = json.load(jsonFile)
 
 ##Output Base Stats File
-with open('basestats.c','w') as baseStatsSource:
-        baseStatsSource.write('#include "defines/pokmemon.h"\n')
+with open('src\\basestats.c','w') as baseStatsSource:
+        baseStatsSource.write('#include "defines/pokemon.h"\n')
+        baseStatsSource.write('const struct BaseStats gBaseStatsNew[]= {\n')
         for entry in masterSlots:
                 index = str(entry["index"])
                 name = entry["key"]
                 masterKey = name
-                baseData = baseStatsDataSet[masterKey]
+                baseData = baseStatsDataSet.get(masterKey)
+                if baseData is None:
+                        baseStatsSource.write("{\n},\n")
+                        continue
                 hp=str(baseData["stats"]["hp"])
                 atk=str(baseData["stats"]["atk"])
                 defen=str(baseData["stats"]["def"])
@@ -73,7 +80,7 @@ with open('basestats.c','w') as baseStatsSource:
                 spatk=str(baseData["stats"]["spatk"])
                 spdef=str(baseData["stats"]["spdef"])
                 type1 = str(typeDataSet.get(baseData["types"][0])["index"]) if typeDataSet.get(baseData["types"][0]) != None else 0
-                type2 = str(typeDataSet.get(baseData["types"][0])["index"]) if typeDataSet.get(baseData["types"][0]) != None else 0
+                type2 = str(typeDataSet.get(baseData["types"][1])["index"]) if len(baseData["types"]) == 2 and typeDataSet.get(baseData["types"][1]) != None else type1
                 catch_rate = str(baseData["catch_rate"])
                 exp_yield = str(baseData["base_exp"])
                 evhp=str(baseData["ev_yield"]["hp"])
@@ -83,13 +90,13 @@ with open('basestats.c','w') as baseStatsSource:
                 evspatk=str(baseData["ev_yield"]["spatk"])
                 evspdef=str(baseData["ev_yield"]["spdef"])
                 item1 = str(itemDataSet.get(baseData["items"][0])["index"]) if itemDataSet.get(baseData["items"][0]) != None else 0
-                item2 = str(itemDataSet.get(baseData["items"][0])["index"]) if itemDataSet.get(baseData["items"][0]) != None else 0
+                item2 = str(itemDataSet.get(baseData["items"][1])["index"]) if len(baseData["items"]) == 2 and itemDataSet.get(baseData["items"][1]) != None else 0
                 genderratio = str(baseData["gender_ratio"])
                 hatching = str(baseData["hatch_cycles"])
                 friendship = str(baseData["base_friendship"])
                 expcurve = str(expCurveDataSet.get(baseData["exp_curve"])["index"]) if itemDataSet.get(baseData["exp_curve"][0]) != None else 0
                 egg_group1 = str(eggGroupDataSet.get(baseData["egg_groups"][0])["index"]) if eggGroupDataSet.get(baseData["egg_groups"][0]) != None else 0
-                egg_group2 = str(eggGroupDataSet.get(baseData["egg_groups"][0])["index"]) if eggGroupDataSet.get(baseData["egg_groups"][0]) != None else 0
+                egg_group2 = str(eggGroupDataSet.get(baseData["egg_groups"][1])["index"]) if len(baseData["egg_groups"]) == 2 and eggGroupDataSet.get(baseData["egg_groups"][1]) != None else egg_group1
                 ability1 = str(abilityDataSet.get(baseData["abilities"]["primary"])["index"]) if abilityDataSet.get(baseData["abilities"]["primary"]) !=None else 0
                 ability2 = str(abilityDataSet.get(baseData["abilities"]["secondary"])["index"]) if baseData["abilities"].get("secondary") !=None and abilityDataSet.get(baseData["abilities"]["secondary"]) !=None else 0
                 flee_rate = str(baseData["escape_rate"])
@@ -98,4 +105,55 @@ with open('basestats.c','w') as baseStatsSource:
                 padding1 = str(abilityDataSet.get(baseData["abilities"]["hidden"])["index"]) if baseData["abilities"].get("hidden") !=None and abilityDataSet.get(baseData["abilities"]["hidden"]) !=None else 0
                 padding2 = '0'
                 baseStatsSource.write(formatStr.format(index,name,hp,atk,defen,spd,spatk,spdef,type1,type2,catch_rate,exp_yield,evhp,evatk,evdef,evspd,evspatk,evspdef,item1,item2,genderratio,hatching,friendship,expcurve,egg_group1,egg_group2,ability1,ability2,flee_rate,dex_color,flip,padding1,padding2))#,,))
-        #
+        baseStatsSource.write('};\n')
+
+dexFormat = '\n    {{  //{}'
+dexFormat = dexFormat + '\n        .categoryName = {},'
+dexFormat = dexFormat + '\n        .height = {},'
+dexFormat = dexFormat + '\n        .weight = {},'
+dexFormat = dexFormat + '\n        .description = {},'
+dexFormat = dexFormat + '\n        .pokemonScale = {},'
+dexFormat = dexFormat + '\n        .pokemonOffset = {},'
+dexFormat = dexFormat + '\n        .trainerScale = {},'
+dexFormat = dexFormat + '\n        .trainerOffset = {},'
+dexFormat = dexFormat + '\n    }},'
+
+
+##Output Dex Data File
+with open('src\\dexdata.c','wb+') as baseStatsSource:
+        baseStatsSource.write('#include "defines/pokemon.h"\n'.encode('utf-8'))
+        
+        for entry in masterSlots:
+                index = str(entry["index"])
+                name = entry["key"]
+                masterKey = name
+                dexData = dexDataSet.get(masterKey)
+                if dexData is None:
+                        continue
+                description = '_("' + dexData["description"] + '")'
+                descriptionIdentifier = "g" + name.title() + "Description"
+                res='\nconst u8 ' + descriptionIdentifier + '[] = ' + description + ';\n'
+                ##print(res.encode('utf-8'))
+                ##break
+                baseStatsSource.write(res.encode('utf-8'))
+
+        baseStatsSource.write('\nstatic const struct PokedexEntry gPokedexEntries[]= {\n'.encode('utf-8'))
+        for entry in masterSlots:
+                index = str(entry["index"])
+                name = entry["key"]
+                masterKey = name
+                dexData = dexDataSet.get(masterKey)
+                if dexData is None:
+                        continue
+                category = ('_("' + dexData["category"] + '")')
+
+                descriptionIdentifier = "g" + name.title() + "Description"
+                height = str(int(dexData["height"]*10))
+                weight = str(int(dexData["weight"]*10))
+                pokemon_scale = str(dexData["pokemon_scale"])
+                pokemon_offset = str(dexData["pokemon_offset"])
+                trainer_scale = str(dexData["trainer_scale"])
+                trainer_offset = str(dexData["trainer_offset"])
+                baseStatsSource.write(dexFormat.format(name,category,height,weight,descriptionIdentifier,pokemon_scale,pokemon_offset,trainer_scale,trainer_offset).encode('utf-8'))
+        baseStatsSource.write('\n};\n'.encode('utf-8'))
+        
