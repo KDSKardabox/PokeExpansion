@@ -1,5 +1,5 @@
 #include "defines/pokemon.h"
-const struct BaseStats gBaseStatsNew[]= {
+const struct BaseStats gBaseStats[]= {
     //0. ?
     {
         /* base_hp */      50,

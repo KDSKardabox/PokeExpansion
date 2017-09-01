@@ -156,23 +156,23 @@ const u8 gSlowpokeDescription[] = _("It catches prey by dipping its tail in\nwat
 
 const u8 gSlowbroDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
 
-const u8 gMagnemiteDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gMagnemiteDescription[] = _("The units at its sides are extremely\npowerful magnets. They generate enough\nmagnetism to draw in iron objects from\nover 300 feet away.");
 
-const u8 gMagnetonDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gMagnetonDescription[] = _("It is actually three Magnemite linked\nby magnetism. It generates powerful radio\nwaves that raise temperatures by 3.6\ndegreesºF within a 3,300-foot radius.");
 
-const u8 gFarfetchdDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gFarfetchdDescription[] = _("It is always seen with a stick from a plant.\nApparently, there are good sticks and bad\nsticks. This Pokémon occasionally fights\nwith others over choice sticks.");
 
-const u8 gDoduoDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gDoduoDescription[] = _("Even while eating or sleeping, one of the\nheads remains always vigilant for any sign\nof danger. When threatened, it flees at\nover 60 miles per hour.");
 
-const u8 gDodrioDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gDodrioDescription[] = _("A peculiar Pokémon species with three\nheads. It vigorously races across grassy\nplains even in arid seasons with little\nrainfall.");
 
-const u8 gSeelDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gSeelDescription[] = _("Seel hunt for prey in frigid, ice-covered\nseas. When it needs to breathe, it punches\na hole through the ice with the sharply\nprotruding section of its head.");
 
-const u8 gDewgongDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gDewgongDescription[] = _("It loves to snooze on bitterly cold ice.\nThe sight of this Pokémon sleeping on\na glacier was mistakenly thought to be\na mermaid by a mariner long ago.");
 
-const u8 gGrimerDescription[] = _("It is said to live in volcanic craters\non mountain peaks. Once a year, it sheds\nits hide and grows larger. The shed hide\ncrumbles and returns to the soil.");
+const u8 gGrimerDescription[] = _("Born from polluted sludge in the sea,\nGrimer’s favorite food is anything filthy.\nThey feed on wastewater pumped out from\nfactories.");
 
-const u8 gMukDescription[] = _("It is said to live in volcanic craters\non mountain peaks. Once a year, it sheds\nits hide and grows larger. The shed hide\ncrumbles and returns to the soil.");
+const u8 gMukDescription[] = _("It prefers warm and humid habitats.\nIn the summertime, the toxic substances\nin its body intensify, making Muk reek like\nputrid kitchen garbage.");
 
 const u8 gShellderDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
 
@@ -2375,94 +2375,94 @@ static const struct PokedexEntry gPokedexEntries[]= {
         .trainerOffset = 1,
     },
     {  //magnemite
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Magnet"),
+        .height = 3,
+        .weight = 60,
         .description = gMagnemiteDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 407,
+        .pokemonOffset = -8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
     },
     {  //magneton
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Magnet"),
+        .height = 10,
+        .weight = 600,
         .description = gMagnetonDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 292,
+        .pokemonOffset = 1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
     },
     {  //farfetchd
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Wild Duck"),
+        .height = 8,
+        .weight = 150,
         .description = gFarfetchdDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 370,
+        .pokemonOffset = 13,
+        .trainerScale = 293,
+        .trainerOffset = 2,
     },
     {  //doduo
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Twin Bird"),
+        .height = 14,
+        .weight = 392,
         .description = gDoduoDescription,
         .pokemonScale = 256,
         .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .trainerScale = 303,
+        .trainerOffset = -1,
     },
     {  //dodrio
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Triple Bird"),
+        .height = 18,
+        .weight = 852,
         .description = gDodrioDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 272,
+        .pokemonOffset = 0,
+        .trainerScale = 318,
+        .trainerOffset = 3,
     },
     {  //seel
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Sea Lion"),
+        .height = 11,
+        .weight = 900,
         .description = gSeelDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 272,
+        .pokemonOffset = 8,
+        .trainerScale = 272,
+        .trainerOffset = -1,
     },
     {  //dewgong
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Sea Lion"),
+        .height = 17,
+        .weight = 1200,
         .description = gDewgongDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 265,
+        .pokemonOffset = 0,
+        .trainerScale = 292,
+        .trainerOffset = 0,
     },
     {  //grimer
-        .categoryName = _("Megaton"),
-        .height = 14,
-        .weight = 3000,
+        .categoryName = _("Sludge"),
+        .height = 9,
+        .weight = 300,
         .description = gGrimerDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 3,
-        .trainerScale = 312,
-        .trainerOffset = 1,
+        .pokemonScale = 272,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
     },
     {  //muk
-        .categoryName = _("Megaton"),
-        .height = 14,
-        .weight = 3000,
+        .categoryName = _("Sludge"),
+        .height = 12,
+        .weight = 300,
         .description = gMukDescription,
         .pokemonScale = 256,
         .pokemonOffset = 3,
-        .trainerScale = 312,
-        .trainerOffset = 1,
+        .trainerScale = 292,
+        .trainerOffset = -1,
     },
     {  //shellder
         .categoryName = _("Hermit Crab"),

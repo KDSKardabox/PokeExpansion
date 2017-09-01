@@ -16,8 +16,8 @@ import glob
 ############
 
 FREE_SPACE = 0xF00000
-REBUILD_ASSETS = 1 ##Temporary. To be shifted to config.txt
-BUNDLE_ASSETS = 0 ##Temporary. To be shifter to config.txt
+REBUILD_ASSETS = 0 ##Temporary. To be shifted to config.txt
+BUNDLE_ASSETS = 1 ##Temporary. To be shifter to config.txt
 
 #############
 #Options end here.
@@ -66,8 +66,8 @@ def preprocfile(src,dst):
 	else:
 		p = subprocess.Popen(os.path.join(TOOLS,"preproc.exe") + " " + src + " " + "charmap.txt", stdout=subprocess.PIPE, shell=True)
 		(output, err) = p.communicate()
-		with open(dst,'w') as dest_file:
-			dest_file.write(output.decode("utf-8"))
+		with open(dst,'wb+') as dest_file:
+			dest_file.write(output)
 
 		
 def preprocdir(src, dst):
@@ -118,7 +118,7 @@ def bundle_raws(rootdir,rootfolder):
 				elif fnmatch.fnmatch(name, '*.raw'):
 					labelname = name.rsplit( ".", 3 )[0] + 'RAW'
 					bundlefile.write(bundle_format.format(labelname,labelname,namepath).replace(os.sep,'/'))
-	img_obj_dst = rootdir.replace(LZ77IMAGES,OBJ_LZ77IMAGES)
+	img_obj_dst = rootdir.replace(rootdir,os.path.join(BUILD,rootdir))
 	if not os.path.exists(img_obj_dst):
 		os.makedirs(img_obj_dst)
 	subprocess.call(AS + " " + ASFLAGS + " -c " + bundle_filepath + " -o " + os.path.join(img_obj_dst, rootfolder+'_bundle.o'))
@@ -219,6 +219,7 @@ for dirname, dirnames, filenames in os.walk(ASERIESIMAGES):
 if BUNDLE_ASSETS is 1:
 	print("\nBundling and compiling images")
 	bundle_raws(LZ77IMAGES,LZ77IMAGES)
+	bundle_raws(ASERIESIMAGES,ASERIESIMAGES)
 			
 
 			
