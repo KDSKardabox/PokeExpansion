@@ -1,5 +1,7 @@
 #include "defines/pokemon.h"
 
+const u8 gDummyDescription[] = _("This is a newly discovered Pokémon.\nIt is currently under investigation.\nNo detailed information is available\nat this time.");
+
 const u8 gBulbasaurDescription[] = _("Bulbasaur can be seen napping in bright\nsunlight. There is a seed on its back.\nBy soaking up the sun’s rays, the seed\ngrows progressively larger.");
 
 const u8 gIvysaurDescription[] = _("To support its bulb, Ivysaur’s legs\ngrow sturdy. If it spends more time lying in\nthe sunlight, the bud will soon bloom into\na large flower.");
@@ -1592,8 +1594,18 @@ const u8 gMagearnaDescription[] = _("This artificial Pokémon, constructed more\
 
 const u8 gMarshadowDescription[] = _("Able to conceal itself in the shadows of\nothers, it never appears before humans,\nso its very existence is the stuff of myth.\nThis Pokémon is craven and cowering.");
 
-static const struct PokedexEntry gPokedexEntries[]= {
+const struct PokedexEntry gPokedexEntries[]= {
 
+    {  //dummy
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = gDummyDescription,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
     {  //bulbasaur
         .categoryName = _("Seed"),
         .height = 7,

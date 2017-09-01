@@ -86,7 +86,7 @@ with open('src\\basestats.c','w') as baseStatsSource:
                 masterKey = name
                 baseData = baseStatsDataSet.get(masterKey)
                 if baseData is None:
-                        baseStatsSource.write("{\n},\n")
+                        baseStatsSource.write("    {\n    },\n")
                         continue
                 hp=str(baseData["stats"]["hp"])
                 atk=str(baseData["stats"]["atk"])
@@ -135,13 +135,13 @@ with open('src\\dexdata.c','wb+') as baseStatsSource:
                 if dexData is None:
                         continue
                 description = '_("' + dexData["description"] + '")'
-                descriptionIdentifier = "g" + name.title() + "Description"
+                descriptionIdentifier = 'g' + name.title() + 'Description'
                 res='\nconst u8 ' + descriptionIdentifier + '[] = ' + description + ';\n'
                 ##print(res.encode('utf-8'))
                 ##break
                 baseStatsSource.write(res.encode('utf-8'))
 
-        baseStatsSource.write('\nstatic const struct PokedexEntry gPokedexEntries[]= {\n'.encode('utf-8'))
+        baseStatsSource.write('\nconst struct PokedexEntry gPokedexEntries[]= {\n'.encode('utf-8'))
         for entry in masterSlots:
                 index = str(entry["index"])
                 name = entry["key"]
@@ -151,7 +151,7 @@ with open('src\\dexdata.c','wb+') as baseStatsSource:
                         continue
                 category = ('_("' + dexData["category"] + '")')
 
-                descriptionIdentifier = "g" + name.title() + "Description"
+                descriptionIdentifier = 'g' + name.title() + 'Description'
                 height = str(int(dexData["height"]*10))
                 weight = str(int(dexData["weight"]*10))
                 pokemon_scale = str(dexData["pokemon_scale"])
@@ -190,23 +190,76 @@ with open('src\\tm_compat.s','w') as TMcompaoutput:
 ##Output Dex Ordering
 with open('src\\dex_order.c','w') as dexordering:
         dexordering.write('#include "types.h"\n')
-        dexordering.write('static const u16 gPokedexOrder_Alphabetical[] = \n{\n')
+        dexordering.write('const u16 gPokedexOrder_Alphabetical[] = \n{\n')
         dexDataSetByName = sorted(dexDataSet.items(), key=lambda x: x[1]["name"])
         for entry in dexDataSetByName:
                 dexordering.write('  ' + str(dexDataSet[entry[0]]["index"])  + ', //' + dexDataSet[entry[0]]["name"]+'\n')
         dexordering.write('};\n')
 
-        dexordering.write('static const u16 gPokedexOrder_Weight[] = \n{\n')
+        dexordering.write('const u16 gPokedexOrder_Weight[] = \n{\n')
         dexDataSetByWeight = sorted(dexDataSet.items(), key=lambda x: x[1]["weight"])
         for entry in dexDataSetByWeight:
                 dexordering.write('  ' + str(dexDataSet[entry[0]]["index"])  + ', //' + dexDataSet[entry[0]]["name"]+'\n')
         dexordering.write('};\n')
 
-        dexordering.write('static const u16 gPokedexOrder_Height[] = \n{\n')
+        dexordering.write('const u16 gPokedexOrder_Height[] = \n{\n')
         dexDataSetByHeight = sorted(dexDataSet.items(), key=lambda x: x[1]["height"])
         for entry in dexDataSetByHeight:
                 dexordering.write('  ' + str(dexDataSet[entry[0]]["index"])  + ', //' + dexDataSet[entry[0]]["name"]+'\n')
         dexordering.write('};\n')
 
+##Output Dex Mapping
+with open('src\\dex_mapping.c','w') as dexordering:
+        dexordering.write('#include "types.h"\n')
+        dexordering.write('const u16 gSpeciesToHoennPokedexNum[] = \n{\n')
+        speciesToHoennMapping = []
+        for entry in masterSlots:
+                index = str(entry["index"])
+                name = entry["key"]
+                dexData = dexDataSet.get(name)
+                if dexData is None:
+                        speciesToHoennMapping.append(0xFFFF)
+                elif name != "dummy":
+                        if dexData["regional_index"] != None:
+                                speciesToHoennMapping.append(dexData["regional_index"])
+                        else:
+                                speciesToHoennMapping.append(0xFFFF)
+        for element in speciesToHoennMapping:
+                dexordering.write(str(element) + ",\n")
+        dexordering.write('};\n')
 
+        dexordering.write('const u16 gSpeciesToNationalPokedexNum[] = \n{\n')
+        speciesToNationalMapping = []
+        for entry in masterSlots:
+                index = str(entry["index"])
+                name = entry["key"]
+                dexData = dexDataSet.get(name)
+                if dexData is None:
+                        speciesToNationalMapping.append(0xFFFF)
+                elif name != "dummy":
+                        if dexData["index"] != None:
+                                speciesToNationalMapping.append(dexData["index"])
+                        else:
+                                speciesToNationalMapping.append(0xFFFF)
+        for element in speciesToNationalMapping:
+                dexordering.write(str(element) + ",\n")
+        dexordering.write('};\n')
+
+        dexordering.write('const u16 gHoennToNationalOrder[] = \n{\n')
+
+        hoeenToNationalMapping=[]
+        for i in range(0,1071):
+                found = False
+                for j in range(0,1071):
+                        if speciesToHoennMapping[j] == i+1:
+                                hoeenToNationalMapping.append(speciesToNationalMapping[j])
+                                found = True
+                                break
+                if found == False:
+                        hoeenToNationalMapping.append(0xFFFF)
+        for element in hoeenToNationalMapping:
+                dexordering.write(str(element) + ",\n")
+        dexordering.write('};\n')     
+
+    
         

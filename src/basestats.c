@@ -1,32 +1,6 @@
 #include "defines/pokemon.h"
 const struct BaseStats gBaseStats[]= {
-    //0. ?
     {
-        /* base_hp */      50,
-        /* base_atk */     150,
-        /* base_def*/      50,
-        /* base_spd */     150,
-        /* base_spatk */   150,
-        /* base_spdef */   50,
-        /* type1 */        0,
-        /* type2 */        0,
-        /* catch_rate */   3,
-        /* exp_yield */    1,
-        /* evs */          2,2,2,2,2,2,
-        /* item1 */        0,
-        /* item2 */        0,
-        /* gender_ratio */ 255,
-        /* hatching */     120,
-        /* friendship */   0,
-        /* exp_curve */    0,
-        /* egg_group1 */   15,
-        /* egg_group2 */   15,
-        /* ability1 */     0,
-        /* ability2 */     0,
-        /* flee_rate */    0,
-        /* dex_colour */   0,0,
-        /* hidden */       0,
-        /* padding2 */     0
     },
     //1. bulbasaur
     {
