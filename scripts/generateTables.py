@@ -42,6 +42,37 @@ dexFormat = dexFormat + '\n        .trainerScale = {},'
 dexFormat = dexFormat + '\n        .trainerOffset = {},'
 dexFormat = dexFormat + '\n    }},'
 
+##spriteLoc = os.path.join('aseries','PokemonSprites')
+
+spriteDataFormat = '    .align 2\n'
+spriteDataFormat = spriteDataFormat + '.global gMonStillFrontPic_{}\n'
+spriteDataFormat = spriteDataFormat + 'gMonStillFrontPic_{}:\n'
+spriteDataFormat = spriteDataFormat + '    .incbin "aseries/PokemonSprites/{}_Animation.bin"\n'
+spriteDataFormat = spriteDataFormat + '\n'
+spriteDataFormat = spriteDataFormat + '    .align 2\n'
+spriteDataFormat = spriteDataFormat + '.global gMonPalette_{}\n'
+spriteDataFormat = spriteDataFormat + 'gMonPalette_{}:\n'
+spriteDataFormat = spriteDataFormat + '    .incbin "aseries/PokemonSprites/{}_Normal.pal"\n'
+spriteDataFormat = spriteDataFormat + '\n'
+spriteDataFormat = spriteDataFormat + '    .align 2\n'
+spriteDataFormat = spriteDataFormat + '.global gMonBackPic_{}\n'
+spriteDataFormat = spriteDataFormat + 'gMonBackPic_{}:\n'
+spriteDataFormat = spriteDataFormat + '    .incbin "aseries/PokemonSprites/{}_Back.bin"\n'
+spriteDataFormat = spriteDataFormat + '\n'
+spriteDataFormat = spriteDataFormat + '    .align 2\n'
+spriteDataFormat = spriteDataFormat + '.global gMonShinyPalette_{}\n'
+spriteDataFormat = spriteDataFormat + 'gMonShinyPalette_{}:\n'
+spriteDataFormat = spriteDataFormat + '    .incbin "aseries/PokemonSprites/{}_Shiny.pal"\n'
+spriteDataFormat = spriteDataFormat + '\n'
+spriteDataFormat = spriteDataFormat + '//    .align 2\n'
+spriteDataFormat = spriteDataFormat + '//gMonIcon_{}:\n'
+spriteDataFormat = spriteDataFormat + '//    .incbin "aseries/PokemonSprites/{}_Icon.bin"\n'
+spriteDataFormat = spriteDataFormat + '\n'
+spriteDataFormat = spriteDataFormat + '//    .align 2\n'
+spriteDataFormat = spriteDataFormat + '//gMonFootprint_{}:\n'
+spriteDataFormat = spriteDataFormat + '//    .incbin "aseries/PokemonSprites/{}_Footprint.bin"\n\n\n'
+
+
 
 with open('jsonInput\\abilities.json','r') as jsonFile:
         abilityDataSet = json.load(jsonFile)
@@ -261,5 +292,39 @@ with open('src\\dex_mapping.c','w') as dexordering:
                 dexordering.write(str(element) + ",\n")
         dexordering.write('};\n')     
 
-    
-        
+##Output Pokemon Sprite Table
+with open('src\\mon_graphics.s','w') as spritesFile, open('src\\mon_back_pic_table.s','w') as backPicFile, open('src\\mon_front_pic_table.s','w') as frontPicFile, open('src\\mon_shiny_palette_table.s','w') as shinyPalletFile, open('src\\mon_pallet_table.s','w') as palletFile, open('src\\mon_still_front_pic_table.s','w') as stillFrontPicFile:
+        macro = '.macro obj_tiles address, uncompressed_size, tag = 0'
+        macro = macro + '\n.4byte \\address'
+        macro = macro + '\n.2byte \\uncompressed_size'
+        macro = macro + '\n.2byte \\tag'
+        macro = macro + '\n.endm'
+        macro = macro + '\n' 
+        macro = macro + '\n.macro obj_pal address, tag'
+        macro = macro + '\n.4byte \\address'
+        macro = macro + '\n.2byte \\tag'
+        macro = macro + '\n.2byte 0@ padding'
+        macro = macro + '\n.endm'
+        macro = macro + '\n'
+        frontPicFile.write('\n')
+        backPicFile.write(macro+'    .align 2\n.global gMonBackPicTable\ngMonBackPicTable:\n')
+        ##frontPicFile.write(macro+'    .align 2\ngMonFrontPicTable:\n')
+        palletFile.write(macro+'    .align 2\n.global gMonPaletteTable\ngMonPaletteTable:\n')
+        shinyPalletFile.write(macro+'    .align 2\n.global gMonShinyPaletteTable\ngMonShinyPaletteTable:\n')
+        stillFrontPicFile.write(macro+'    .align 2\n.global gMonFrontPicTable\ngMonFrontPicTable:\n')
+        for i in range(0,1072):
+                numberFormat = "%04d" % 1
+                entry = masterSlots[i]
+                index = str(entry["index"])
+                name = entry["key"].capitalize()
+                if name == '?':
+                        name = str(i)
+                name = name.replace('!','exclam').replace('?','interro')
+                name = ''.join(e for e in name if e.isalnum())
+                spritesFile.write(spriteDataFormat.format(name,name,numberFormat,name,name,numberFormat,name,name,numberFormat,name,name,numberFormat,name,numberFormat,name,numberFormat))
+                backPicFile.write('obj_tiles gMonBackPic_'+name+', 0x800, '+str(i)+'\n')
+                ##frontPicFile.write('obj_tiles gMonStillFrontPic_'+name+', 0x800, '+str(i)+'\n')
+                palletFile.write('obj_pal gMonPalette_'+name+' , '+str(i)+'\n')
+                shinyPalletFile.write('obj_pal gMonShinyPalette_'+name+' , '+str(i)+'\n')
+                stillFrontPicFile.write('obj_tiles gMonStillFrontPic_'+name+', 0x800, '+str(i)+'\n')
+ 
