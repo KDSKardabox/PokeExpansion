@@ -208,13 +208,14 @@ for dirname, dirnames, filenames in os.walk(LZ77IMAGES):
 for dirname, dirnames, filenames in os.walk(ASERIESIMAGES):
 	for filename in filenames:
 		if fnmatch.fnmatch(filename, '*.png'):
-			image_pal = filename.rsplit( ".", 3 )[0] + '.pal'
-			image_bin = filename.rsplit( ".", 3 )[0] + '.bin'
+			image_pal = filename.rsplit( ".", 3 )[0] + '_Normal.pal'
+			image_bin = filename.rsplit( ".", 3 )[0] + '_Animation.bin'
 			if REBUILD_ASSETS is 0 and os.path.exists(os.path.join(dirname, image_pal)) and os.path.exists(os.path.join(dirname, image_bin)):
 				continue
 
-			#print("Processing " + filename) 
-			subprocess.call(os.path.join(TOOLS,'Oat.exe') + " " + os.path.join(dirname,filename) + " -aseries")	
+			#print("Processing " + filename)
+			if subprocess.call(os.path.join(TOOLS,'Oat.exe') + " " + os.path.join(dirname,filename) + " -aseries") is 1:
+                                print(filename)
 			
 if BUNDLE_ASSETS is 1:
 	print("\nBundling and compiling images")
@@ -268,7 +269,7 @@ replace_line("armips.asm",".org 0x08",".org " + hex(offset + 134217728))
 
 #print(offset)
 
-subprocess.call('armips "armips.asm" -sym "test.sym"')
+##subprocess.call('armips "armips.asm" -sym "test.sym"')
 
 print("Unless you have an error, the project has compiled and inserted!")
 

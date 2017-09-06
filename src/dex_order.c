@@ -807,69 +807,71 @@ const u16 gPokedexOrder_Alphabetical[] =
 const u16 gPokedexOrder_Weight[] = 
 {
   0, //??????????
-  798, //Kartana
+  92, //Gastly
+  93, //Haunter
   669, //Flabébé
+  798, //Kartana
   789, //Cosmog
-  746, //Wishiwashi
-  602, //Tynamo
-  480, //Uxie
-  764, //Comfey
-  482, //Azelf
-  481, //Mesprit
   479, //Rotom
+  480, //Uxie
+  481, //Mesprit
+  482, //Azelf
+  602, //Tynamo
+  746, //Wishiwashi
+  764, //Comfey
   742, //Cutiefly
+  187, //Hoppip
   682, //Spritzee
   743, //Ribombee
-  187, //Hoppip
   433, //Chingling
-  595, //Joltik
   546, //Cottonee
+  595, //Joltik
   778, //Mimikyu
-  747, //Mareanie
-  351, //Castform
   50, //Diglett
+  351, //Castform
+  747, //Mareanie
   670, //Floette
-  577, //Solosis
-  174, //Igglybuff
   109, //Koffing
+  174, //Igglybuff
   188, //Skiploom
-  358, //Chimecho
-  590, //Foongus
   200, //Misdreavus
+  358, //Chimecho
+  577, //Solosis
+  590, //Foongus
   385, //Jirachi
-  731, //Pikipek
-  425, //Drifloon
-  771, //Pyukumuku
-  406, //Budew
-  333, //Swablu
   292, //Shedinja
+  333, //Swablu
+  406, //Budew
+  425, //Drifloon
+  731, //Pikipek
+  771, //Pyukumuku
   490, //Manaphy
-  562, //Yamask
-  753, //Fomantis
-  722, //Rowlet
   175, //Togepi
+  562, //Yamask
+  722, //Rowlet
+  753, //Fomantis
   755, //Morelull
   283, //Surskit
   661, //Fletchling
-  191, //Sunkern
   16, //Pidgey
+  191, //Sunkern
   339, //Barboach
   441, //Chatot
-  315, //Roselia
   21, //Spearow
+  172, //Pichu
   177, //Natu
   298, //Azurill
-  172, //Pichu
-  679, //Honedge
+  315, //Roselia
   396, //Starly
+  679, //Honedge
   198, //Murkrow
   492, //Shaymin
   519, //Pidove
   527, //Woobat
   401, //Kricketot
   702, //Dedenne
-  353, //Shuppet
   276, //Taillow
+  353, //Shuppet
   102, //Exeggcute
   255, //Torchic
   540, //Sewaddle
@@ -877,244 +879,246 @@ const u16 gPokedexOrder_Weight[] =
   270, //Lotad
   704, //Goomy
   10, //Caterpie
-  707, //Klefki
-  189, //Jumpluff
   173, //Cleffa
+  189, //Jumpluff
+  707, //Klefki
   489, //Phione
   607, //Litwick
+  13, //Weedle
   176, //Togetic
   761, //Bounsweet
-  13, //Weedle
-  777, //Togedemaru
-  420, //Cherubi
   147, //Dratini
+  420, //Cherubi
+  777, //Togedemaru
   412, //Burmy
   741, //Oricorio
-  677, //Espurr
   19, //Rattata
-  686, //Inkay
+  677, //Espurr
   684, //Swirlix
+  686, //Inkay
   265, //Wurmple
   284, //Masquerain
-  431, //Glameow
   211, //Qwilfish
   417, //Pachirisu
-  273, //Seedot
-  151, //Mew
-  494, //Victini
-  132, //Ditto
-  751, //Dewpider
+  431, //Glameow
   69, //Bellsprout
+  90, //Shellder
+  132, //Ditto
+  151, //Mew
+  273, //Seedot
+  494, //Victini
+  751, //Dewpider
   506, //Lillipup
   52, //Meowth
   311, //Plusle
   312, //Minun
   725, //Litten
-  736, //Grubbin
   429, //Mismagius
+  736, //Grubbin
   285, //Shroomish
   535, //Tympole
   680, //Doublade
   757, //Salandit
-  710, //Pumpkaboo
-  587, //Emolga
-  222, //Corsola
-  252, //Treecko
-  659, //Bunnelby
   201, //Unown
-  685, //Slurpuff
-  327, //Spinda
+  222, //Corsola
   251, //Celebi
+  252, //Treecko
+  327, //Spinda
+  587, //Emolga
+  659, //Bunnelby
+  685, //Slurpuff
+  710, //Pumpkaboo
   393, //Piplup
   543, //Venipede
   43, //Oddish
   46, //Paras
-  415, //Combee
-  580, //Ducklett
   39, //Jigglypuff
   290, //Nincada
+  415, //Combee
   427, //Buneary
+  580, //Ducklett
   703, //Carbink
   182, //Bellossom
-  574, //Gothita
   572, //Minccino
-  588, //Karrablast
+  574, //Gothita
   501, //Oshawott
-  694, //Helioptile
-  81, //Magnemite
-  734, //Yungoos
+  588, //Karrablast
   25, //Pikachu
-  238, //Smoochum
+  81, //Magnemite
   161, //Sentret
+  238, //Smoochum
+  694, //Helioptile
+  734, //Yungoos
   390, //Chimchar
   422, //Shellos
   70, //Weepinbell
   152, //Chikorita
-  648, //Meloetta
+  98, //Krabby
   104, //Cubone
-  413, //Wormadam
-  220, //Swinub
   133, //Eevee
+  220, //Swinub
+  413, //Wormadam
+  648, //Meloetta
   280, //Ralts
-  548, //Petilil
   547, //Whimsicott
+  548, //Petilil
   759, //Stufful
   1, //Bulbasaur
   23, //Ekans
-  708, //Phantump
   656, //Froakie
+  708, //Phantump
   739, //Crabrawler
   204, //Pineco
   541, //Swadloon
   690, //Skrelp
   349, //Feebas
-  573, //Cinccino
-  728, //Popplio
-  138, //Omanyte
   35, //Clefairy
   41, //Zubat
+  138, //Omanyte
+  573, //Cinccino
+  728, //Popplio
   258, //Mudkip
   616, //Shelmet
   179, //Mareep
   209, //Snubbull
   155, //Cyndaquil
-  674, //Pancham
-  578, //Duosion
-  714, //Noibat
   116, //Horsea
+  578, //Duosion
+  674, //Pancham
+  714, //Noibat
   495, //Snivy
   762, //Steenee
   692, //Clauncher
   665, //Spewpa
-  613, //Cubchoo
   4, //Charmander
-  183, //Marill
-  678, //Meowstic
   167, //Spinarak
+  183, //Marill
   192, //Sunflora
   194, //Wooper
+  613, //Cubchoo
+  678, //Meowstic
   44, //Gloom
   370, //Luvdisc
-  719, //Diancie
   216, //Teddiursa
+  719, //Diancie
+  7, //Squirtle
   32, //Nidoran?
   605, //Elgyem
-  7, //Squirtle
-  720, //Hoopa
-  650, //Chespin
   629, //Vullaby
+  650, //Chespin
+  720, //Hoopa
   744, //Rockruff
   421, //Cherrim
   653, //Fennekin
-  566, //Archen
+  110, //Weezing
   158, //Totodile
   278, //Wingull
   403, //Shinx
-  110, //Weezing
+  566, //Archen
   456, //Finneon
-  37, //Vulpix
   11, //Metapod
+  37, //Vulpix
   498, //Tepig
+  14, //Kakuna
+  129, //Magikarp
   266, //Silcoon
   671, //Florges
-  129, //Magikarp
-  14, //Kakuna
   509, //Purrloin
   387, //Turtwig
   624, //Pawniard
   316, //Gulpin
   100, //Voltorb
-  591, //Amoonguss
-  627, //Rufflet
   511, //Pansage
   528, //Swoobat
+  591, //Amoonguss
+  627, //Rufflet
   737, //Charjabug
-  228, //Houndour
   165, //Ledyba
+  228, //Houndour
   657, //Frogadier
-  302, //Sableye
-  618, //Stunfisk
-  513, //Pansear
   300, //Skitty
+  302, //Sableye
+  513, //Pansear
+  618, //Stunfisk
   307, //Meditite
+  140, //Kabuto
   190, //Aipom
   268, //Cascoon
   303, //Mawile
-  140, //Kabuto
   341, //Corphish
   756, //Shiinotic
   504, //Patrat
   559, //Scraggy
   27, //Sandshrew
+  40, //Wigglytuff
   170, //Chinchou
+  223, //Remoraid
   291, //Ninjask
   451, //Skorupi
-  223, //Remoraid
   767, //Wimpod
-  40, //Wigglytuff
   60, //Poliwag
-  570, //Zorua
-  711, //Gourgeist
+  49, //Venomoth
+  347, //Anorith
   354, //Banette
   532, //Timburr
-  347, //Anorith
-  49, //Venomoth
-  608, //Lampent
-  439, //Mime Jr.
+  570, //Zorua
+  711, //Gourgeist
   2, //Ivysaur
+  439, //Mime Jr.
+  608, //Lampent
   180, //Flaaffy
   515, //Panpour
   667, //Litleo
   261, //Poochyena
   206, //Dunsparce
-  561, //Sigilyph
   360, //Wynaut
+  561, //Sigilyph
   735, //Gumshoos
   596, //Galvantula
-  748, //Toxapex
-  654, //Braixen
   407, //Roserade
   557, //Dwebble
+  654, //Braixen
+  748, //Toxapex
   507, //Herdier
   732, //Trumbeak
-  118, //Goldeen
-  328, //Trapinch
-  723, //Dartrix
-  178, //Xatu
-  520, //Tranquill
-  426, //Drifblim
-  355, //Duskull
-  438, //Bonsly
   83, //Farfetch’d
+  118, //Goldeen
+  178, //Xatu
+  328, //Trapinch
+  355, //Duskull
+  426, //Drifblim
+  438, //Bonsly
+  520, //Tranquill
+  723, //Dartrix
   309, //Electrike
   551, //Sandile
   329, //Vibrava
+  71, //Victreebel
   397, //Staravia
   683, //Aromatisse
-  71, //Victreebel
   153, //Bayleef
-  496, //Servine
   225, //Delibird
+  496, //Servine
   662, //Fletchindr
   293, //Whismur
   549, //Lilligant
   148, //Dragonair
   564, //Tirtouga
   361, //Snorunt
-  666, //Vivillon
   536, //Palpitoad
+  666, //Vivillon
   633, //Deino
-  729, //Brionne
   263, //Zigzagoon
   705, //Sliggoo
-  314, //Illumise
+  729, //Brionne
   313, //Volbeat
-  610, //Axew
+  314, //Illumise
+  524, //Roggenrola
   550, //Basculin
   575, //Gothorita
-  524, //Roggenrola
-  754, //Lurantis
+  610, //Axew
   20, //Raticate
+  754, //Lurantis
   45, //Vileplume
   786, //Tapu Lele
   529, //Drilbur
@@ -1124,161 +1128,162 @@ const u16 gPokedexOrder_Weight[] =
   156, //Quilava
   779, //Bruxish
   434, //Stunky
-  66, //Machop
-  585, //Deerling
   33, //Nidorino
-  256, //Combusken
   63, //Abra
+  66, //Machop
+  256, //Combusken
+  585, //Deerling
   54, //Psyduck
   277, //Swellow
-  775, //Komala
   38, //Ninetales
-  399, //Bidoof
-  74, //Geodude
-  619, //Mienfoo
+  775, //Komala
   30, //Nidorina
   61, //Poliwhirl
+  74, //Geodude
+  399, //Bidoof
+  619, //Mienfoo
   579, //Reuniclus
   281, //Kirlia
   447, //Riolu
   424, //Ambipom
+  213, //Shuckle
   443, //Gible
   542, //Leavanny
-  213, //Shuckle
   785, //Tapu Koko
   334, //Altaria
   318, //Carvanha
+  236, //Tyrogue
   599, //Klink
   695, //Heliolisk
-  236, //Tyrogue
-  788, //Tapu Fini
   163, //Hoothoot
+  788, //Tapu Fini
   240, //Magby
   763, //Tsareena
   343, //Baltoy
   701, //Hawlucha
   253, //Grovyle
   352, //Kecleon
-  603, //Eelektrik
   391, //Monferno
-  802, //Marshadow
+  603, //Eelektrik
   758, //Salazzle
+  802, //Marshadow
   8, //Wartortle
-  171, //Lanturn
   9, //Blastoise
+  171, //Lanturn
   368, //Gorebyss
   394, //Prinplup
   453, //Croagunk
   414, //Mothim
   517, //Munna
   369, //Relicanth
-  700, //Sylveon
   239, //Elekid
+  700, //Sylveon
   274, //Nuzleaf
   340, //Whiscash
   345, //Lileep
-  457, //Lumineon
   287, //Slakoth
   322, //Numel
+  457, //Lumineon
   581, //Swanna
   440, //Happiny
   135, //Jolteon
-  663, //Talonflame
   502, //Dewott
+  663, //Talonflame
   398, //Staraptor
-  795, //Pheromosa
-  726, //Torracat
-  159, //Croconaw
-  136, //Flareon
   117, //Seadra
+  136, //Flareon
+  159, //Croconaw
+  726, //Torracat
   745, //Lycanroc
+  795, //Pheromosa
   698, //Amaura
   617, //Accelgor
-  470, //Leafeon
   402, //Kricketune
+  470, //Leafeon
   471, //Glaceon
-  733, //Toucannon
   696, //Tyrunt
+  733, //Toucannon
   196, //Espeon
   478, //Froslass
   197, //Umbreon
-  455, //Carnivine
   367, //Huntail
+  455, //Carnivine
   505, //Watchog
   430, //Honchkrow
+  56, //Mankey
   215, //Sneasel
   259, //Marshtomp
-  56, //Mankey
-  676, //Furfrou
-  514, //Simisear
   279, //Pelipper
+  514, //Simisear
+  676, //Furfrou
   267, //Beautifly
-  224, //Octillery
   184, //Azumarill
   202, //Wobbuffet
+  224, //Octillery
   636, //Larvesta
-  516, //Simipour
   134, //Vaporeon
-  651, //Quilladin
+  516, //Simipour
   521, //Unfezant
+  651, //Quilladin
   15, //Beedrill
   28, //Sandslash
-  418, //Buizel
   47, //Parasect
+  418, //Buizel
   782, //Jangmo-o
   522, //Blitzle
   423, //Gastrodon
-  26, //Raichu
-  89, //Muk
-  77, //Ponyta
-  125, //Electabuzz
   17, //Pidgeotto
-  560, //Scrafty
+  26, //Raichu
   48, //Venonat
+  77, //Ponyta
   88, //Grimer
-  512, //Simisage
+  89, //Muk
+  125, //Electabuzz
+  560, //Scrafty
   404, //Luxio
+  512, //Simisage
   325, //Spoink
   356, //Dusclops
+  531, //Audino
+  568, //Trubbish
   672, //Skiddo
   688, //Binacle
-  568, //Trubbish
-  531, //Audino
   308, //Medicham
   400, //Bibarel
   408, //Cranidos
   269, //Dustox
   594, //Alomomola
-  53, //Persian
   12, //Butterfree
+  53, //Persian
   57, //Primeape
   567, //Archeops
-  271, //Lombre
-  233, //Porygon2
+  96, //Drowzee
   162, //Furret
+  233, //Porygon2
   264, //Linoone
+  271, //Lombre
   301, //Delcatty
   342, //Crawdaunt
-  632, //Durant
   589, //Escavalier
   592, //Frillish
-  428, //Lopunny
+  632, //Durant
   51, //Dugtrio
+  428, //Lopunny
   552, //Krokorok
-  419, //Floatzel
-  231, //Phanpy
   168, //Ariados
+  231, //Phanpy
+  419, //Floatzel
   186, //Politoed
-  474, //Porygon-Z
   461, //Weavile
+  474, //Porygon-Z
   609, //Chandelure
   120, //Staryu
   606, //Beheeyem
   113, //Chansey
   114, //Tangela
+  139, //Omastar
   218, //Slugma
   229, //Houndoom
-  139, //Omastar
   693, //Clawitzer
   620, //Mienshao
   166, //Ledian
@@ -1287,57 +1292,58 @@ const u16 gPokedexOrder_Weight[] =
   137, //Porygon
   724, //Decidueye
   262, //Mightyena
-  554, //Darumaka
   510, //Liepard
-  435, //Skuntank
-  193, //Yanma
+  554, //Darumaka
   22, //Fearow
   185, //Sudowoodo
+  193, //Yanma
+  435, //Skuntank
   468, //Togekiss
   416, //Vespiquen
   119, //Seaking
   655, //Delphox
-  286, //Breloom
   84, //Doduo
-  363, //Spheal
+  286, //Breloom
   18, //Pidgeot
+  363, //Spheal
   630, //Mandibuzz
   36, //Clefable
-  533, //Gurdurr
   380, //Latias
+  533, //Gurdurr
   658, //Greninja
   774, //Minior
   310, //Manectric
   335, //Zangoose
   530, //Excadrill
+  94, //Gengar
   141, //Kabutops
   294, //Loudred
   124, //Jynx
   164, //Noctowl
-  628, //Braviary
   583, //Vanillish
+  628, //Braviary
   203, //Girafarig
   405, //Luxray
   371, //Bagon
   660, //Diggersby
   472, //Gliscor
   432, //Purugly
-  730, //Primarina
   576, //Gothitelle
+  730, //Primarina
   454, //Toxicroak
   126, //Magmar
   105, //Marowak
   738, //Vikavolt
-  787, //Tapu Bulu
   72, //Tentacool
+  787, //Tapu Bulu
   637, //Volcarona
   288, //Vigoroth
   242, //Blissey
-  687, //Malamar
   359, //Absol
+  687, //Malamar
   783, //Hakamo-o
-  237, //Hitmontop
   65, //Alakazam
+  237, //Hitmontop
   282, //Gardevoir
   647, //Keldeo
   210, //Granbull
@@ -1345,8 +1351,8 @@ const u16 gPokedexOrder_Weight[] =
   106, //Hitmonlee
   634, //Zweilous
   107, //Hitmonchan
-  459, //Snover
   227, //Skarmory
+  459, //Snover
   491, //Darkrai
   539, //Sawk
   331, //Cacnea
@@ -1354,101 +1360,93 @@ const u16 gPokedexOrder_Weight[] =
   257, //Blaziken
   475, //Gallade
   254, //Sceptile
-  366, //Clamperl
   336, //Seviper
+  366, //Clamperl
   145, //Zapdos
   681, //Aegislash
-  448, //Lucario
   62, //Poliwrath
   214, //Heracross
+  448, //Lucario
   122, //Mr. Mime
   42, //Golbat
-  219, //Magcargo
-  127, //Pinsir
   73, //Tentacruel
-  392, //Infernape
+  127, //Pinsir
+  219, //Magcargo
   272, //Ludicolo
+  392, //Infernape
   144, //Articuno
+  499, //Pignite
   538, //Throh
   793, //Nihilego
-  499, //Pignite
   221, //Piloswine
-  600, //Klang
   123, //Scyther
   444, //Gabite
+  600, //Klang
   64, //Kadabra
   410, //Shieldon
   584, //Vanilluxe
-  631, //Heatmor
   235, //Smeargle
+  631, //Heatmor
   544, //Whirlipede
   142, //Aerodactyl
   275, //Shiftry
-  82, //Magneton
-  381, //Latios
-  304, //Aron
   31, //Nidoqueen
+  82, //Magneton
+  99, //Kingler
   146, //Moltres
+  304, //Aron
+  381, //Latios
   346, //Cradily
-  518, //Musharna
   436, //Bronzor
+  518, //Musharna
   386, //Deoxys
-  642, //Thundurus
   508, //Stoutland
+  642, //Thundurus
   181, //Ampharos
   452, //Drapion
-  537, //Seismitoad
   34, //Nidoking
+  537, //Seismitoad
   497, //Serperior
   641, //Tornadus
   207, //Gligar
-  458, //Mantyke
   24, //Arbok
+  458, //Mantyke
   108, //Lickitung
   101, //Electrode
   467, //Magmortar
   645, //Landorus
   348, //Armaldo
-  769, //Sandygast
   625, //Bisharp
+  769, //Sandygast
   67, //Machoke
   709, //Trevenant
   234, //Stantler
   326, //Grumpig
   246, //Larvitar
-  195, //Quagsire
   169, //Crobat
+  195, //Quagsire
   241, //Miltank
+  97, //Hypno
   765, //Oranguru
   563, //Cofagrigus
   55, //Golduck
   332, //Cacturne
   784, //Kommo-o
-  93, //Haunter
-  99, //Kingler
-  94, //Gengar
-  96, //Drowzee
-  91, //Cloyster
-  98, //Krabby
-  92, //Gastly
-  90, //Shellder
-  97, //Hypno
-  95, //Onix
   80, //Slowbro
-  523, //Zebstrika
-  199, //Slowking
   157, //Typhlosion
-  317, //Swalot
+  199, //Slowking
+  523, //Zebstrika
   115, //Kangaskhan
   121, //Starmie
+  317, //Swalot
   324, //Torkoal
   604, //Eelektross
   801, //Magearna
-  601, //Klinklang
   565, //Carracosta
+  601, //Klinklang
   571, //Zoroark
-  691, //Dragalge
   668, //Pyroar
+  691, //Dragalge
   260, //Swampert
   330, //Flygon
   752, //Araquanid
@@ -1464,17 +1462,17 @@ const u16 gPokedexOrder_Weight[] =
   534, //Conkeldurr
   364, //Sealeo
   128, //Tauros
-  319, //Sharpedo
   160, //Feraligatr
-  652, //Chesnaught
+  319, //Sharpedo
   86, //Seel
+  652, //Chesnaught
   6, //Charizard
   673, //Gogoat
   622, //Golett
   586, //Sawsbuck
   555, //Darmanitan
-  626, //Bouffalant
   503, //Samurott
+  626, //Bouffalant
   78, //Rapidash
   445, //Garchomp
   374, //Beldum
@@ -1483,9 +1481,9 @@ const u16 gPokedexOrder_Weight[] =
   299, //Nosepass
   388, //Grotle
   712, //Bergmite
-  796, //Xurkitree
   3, //Venusaur
   357, //Tropius
+  796, //Xurkitree
   154, //Meganium
   773, //Silvally
   525, //Boldore
@@ -1496,28 +1494,29 @@ const u16 gPokedexOrder_Weight[] =
   612, //Haxorus
   477, //Dusknoir
   569, //Garbodor
-  768, //Golisopod
-  442, //Spiritomb
   344, //Claydol
-  749, //Mudbray
+  442, //Spiritomb
+  768, //Golisopod
   598, //Ferrothorn
+  749, //Mudbray
   372, //Shelgon
   111, //Rhyhorn
   212, //Scizor
-  112, //Rhydon
   87, //Dewgong
-  305, //Lairon
   103, //Exeggutor
-  792, //Lunala
+  112, //Rhydon
   232, //Donphan
+  305, //Lairon
+  792, //Lunala
   772, //Type: Null
   150, //Mewtwo
   205, //Forretress
   217, //Ursaring
   465, //Tangrowth
-  320, //Wailmer
   68, //Machamp
+  320, //Wailmer
   289, //Slaking
+  91, //Cloyster
   593, //Jellicent
   760, //Bewear
   460, //Abomasnow
@@ -1530,8 +1529,8 @@ const u16 gPokedexOrder_Weight[] =
   500, //Emboar
   706, //Goodra
   365, //Walrein
-  247, //Pupitar
   230, //Kingdra
+  247, //Pupitar
   338, //Solrock
   59, //Arcanine
   635, //Hydreigon
@@ -1542,8 +1541,8 @@ const u16 gPokedexOrder_Weight[] =
   582, //Vanillite
   378, //Regice
   243, //Raikou
-  740, //Crabomable
   462, //Magnezone
+  740, //Crabomable
   780, //Drampa
   245, //Suicune
   437, //Bronzong
@@ -1557,8 +1556,9 @@ const u16 gPokedexOrder_Weight[] =
   717, //Yveltal
   379, //Registeel
   384, //Rayquaza
-  781, //Dhelmise
+  95, //Onix
   149, //Dragonite
+  781, //Dhelmise
   776, //Turtonator
   716, //Xerneas
   249, //Lugia
@@ -1566,17 +1566,17 @@ const u16 gPokedexOrder_Weight[] =
   226, //Mantine
   323, //Camerupt
   699, //Aurorus
+  377, //Regirock
   791, //Solgaleo
   800, //Necrozma
-  377, //Regirock
   130, //Gyarados
-  770, //Palossand
   638, //Cobalion
+  770, //Palossand
   297, //Hariyama
   362, //Glalie
   526, //Gigalith
-  639, //Terrakion
   614, //Beartic
+  639, //Terrakion
   697, //Tyrantrum
   464, //Rhyperior
   473, //Mamoswine
@@ -1586,8 +1586,8 @@ const u16 gPokedexOrder_Weight[] =
   389, //Torterra
   493, //Arceus
   646, //Kyurem
-  643, //Reshiram
   623, //Golurk
+  643, //Reshiram
   794, //Buzzwole
   484, //Palkia
   476, //Probopass
@@ -1616,792 +1616,791 @@ const u16 gPokedexOrder_Height[] =
   669, //Flabébé
   764, //Comfey
   790, //Cosmoem
-  707, //Klefki
-  433, //Chingling
-  412, //Burmy
-  682, //Spritzee
-  746, //Wishiwashi
-  492, //Shaymin
-  670, //Floette
-  406, //Budew
-  602, //Tynamo
-  778, //Mimikyu
-  177, //Natu
-  590, //Foongus
-  789, //Cosmog
-  298, //Azurill
   50, //Diglett
-  755, //Morelull
+  177, //Natu
+  298, //Azurill
+  406, //Budew
+  412, //Burmy
+  433, //Chingling
+  492, //Shaymin
+  590, //Foongus
+  602, //Tynamo
+  670, //Floette
+  682, //Spritzee
   702, //Dedenne
-  731, //Pikipek
-  529, //Drilbur
-  265, //Wurmple
-  415, //Combee
-  401, //Kricketot
-  677, //Espurr
-  607, //Litwick
-  422, //Shellos
-  81, //Magnemite
-  490, //Manaphy
-  599, //Klink
-  771, //Pyukumuku
-  798, //Kartana
-  519, //Pidove
-  632, //Durant
-  777, //Togedemaru
-  19, //Rattata
-  577, //Solosis
-  753, //Fomantis
-  191, //Sunkern
-  173, //Cleffa
-  546, //Cottonee
-  480, //Uxie
-  174, //Igglybuff
-  46, //Paras
-  665, //Spewpa
-  482, //Azelf
-  133, //Eevee
+  707, //Klefki
+  746, //Wishiwashi
+  755, //Morelull
+  778, //Mimikyu
+  789, //Cosmog
   10, //Caterpie
-  315, //Roselia
-  703, //Carbink
+  13, //Weedle
   16, //Pidgey
-  761, //Bounsweet
-  481, //Mesprit
-  540, //Sewaddle
-  722, //Rowlet
-  175, //Togepi
+  19, //Rattata
   21, //Spearow
+  46, //Paras
+  81, //Magnemite
+  90, //Shellder
   132, //Ditto
-  661, //Fletchling
+  133, //Eevee
   172, //Pichu
-  557, //Dwebble
-  479, //Rotom
-  751, //Dewpider
-  704, //Goomy
-  656, //Froakie
-  351, //Castform
+  173, //Cleffa
+  174, //Igglybuff
+  175, //Togepi
+  191, //Sunkern
+  265, //Wurmple
   276, //Taillow
+  315, //Roselia
+  351, //Castform
   385, //Jirachi
   396, //Starly
-  13, //Weedle
+  401, //Kricketot
+  415, //Combee
+  422, //Shellos
+  479, //Rotom
+  480, //Uxie
+  481, //Mesprit
+  482, //Azelf
+  490, //Manaphy
+  519, //Pidove
+  529, //Drilbur
+  540, //Sewaddle
+  546, //Cottonee
+  557, //Dwebble
+  577, //Solosis
+  599, //Klink
+  607, //Litwick
+  632, //Durant
+  656, //Froakie
+  661, //Fletchling
   664, //Scatterbug
+  665, //Spewpa
+  677, //Espurr
+  703, //Carbink
+  704, //Goomy
+  722, //Rowlet
+  731, //Pikipek
+  751, //Dewpider
+  753, //Fomantis
+  761, //Bounsweet
+  771, //Pyukumuku
   774, //Minior
-  736, //Grubbin
-  710, //Pumpkaboo
-  425, //Drifloon
-  182, //Bellossom
-  52, //Meowth
-  587, //Emolga
-  489, //Phione
-  258, //Mudkip
-  574, //Gothita
-  653, //Fennekin
-  74, //Geodude
-  708, //Phantump
-  285, //Shroomish
-  183, //Marill
-  366, //Clamperl
-  728, //Popplio
-  775, //Komala
-  339, //Barboach
-  104, //Cubone
-  138, //Omanyte
-  742, //Cutiefly
-  434, //Stunky
-  734, //Yungoos
-  543, //Venipede
-  509, //Purrloin
-  151, //Mew
-  280, //Ralts
-  456, //Finneon
-  102, //Exeggcute
-  582, //Vanillite
-  220, //Swinub
-  494, //Victini
-  686, //Inkay
-  255, //Torchic
-  659, //Bunnelby
-  316, //Gulpin
-  311, //Plusle
-  420, //Cherubi
-  304, //Aron
-  747, //Mareanie
+  777, //Togedemaru
+  798, //Kartana
   25, //Pikachu
-  187, //Hoppip
-  263, //Zigzagoon
-  312, //Minun
-  331, //Cacnea
-  572, //Minccino
-  194, //Wooper
-  427, //Buneary
+  52, //Meowth
+  74, //Geodude
+  98, //Krabby
+  102, //Exeggcute
+  104, //Cubone
   116, //Horsea
-  506, //Lillipup
-  524, //Roggenrola
-  333, //Swablu
-  527, //Woobat
-  725, //Litten
-  650, //Chespin
-  417, //Pachirisu
-  387, //Turtwig
+  138, //Omanyte
+  151, //Mew
+  182, //Bellossom
+  183, //Marill
+  187, //Hoppip
+  194, //Wooper
+  220, //Swinub
   238, //Smoochum
-  684, //Swirlix
+  255, //Torchic
+  258, //Mudkip
+  263, //Zigzagoon
+  280, //Ralts
+  285, //Shroomish
+  304, //Aron
+  311, //Plusle
+  312, //Minun
+  316, //Gulpin
+  331, //Cacnea
+  333, //Swablu
+  339, //Barboach
+  366, //Clamperl
+  387, //Turtwig
   393, //Piplup
+  417, //Pachirisu
+  420, //Cherubi
+  425, //Drifloon
+  427, //Buneary
+  434, //Stunky
+  456, //Finneon
+  489, //Phione
+  494, //Victini
+  506, //Lillipup
+  509, //Purrloin
+  524, //Roggenrola
+  527, //Woobat
+  543, //Venipede
+  572, //Minccino
+  574, //Gothita
+  582, //Vanillite
+  587, //Emolga
   616, //Shelmet
-  421, //Cherrim
-  32, //Nidoran?
-  302, //Sableye
-  198, //Murkrow
-  613, //Cubchoo
-  270, //Lotad
-  541, //Swadloon
-  573, //Cinccino
-  688, //Binacle
-  399, //Bidoof
-  694, //Helioptile
-  273, //Seedot
-  566, //Archen
-  170, //Chinchou
-  562, //Yamask
-  343, //Baltoy
-  627, //Rufflet
-  390, //Chimchar
-  580, //Ducklett
-  535, //Tympole
-  504, //Patrat
-  413, //Wormadam
-  43, //Oddish
-  605, //Elgyem
-  39, //Jigglypuff
-  769, //Sandygast
-  588, //Karrablast
-  290, //Nincada
-  140, //Kabuto
-  100, //Voltorb
-  252, //Treecko
-  501, //Oshawott
-  692, //Clauncher
-  201, //Unown
+  650, //Chespin
+  653, //Fennekin
+  659, //Bunnelby
+  684, //Swirlix
+  686, //Inkay
+  708, //Phantump
+  710, //Pumpkaboo
+  725, //Litten
+  728, //Popplio
+  734, //Yungoos
+  736, //Grubbin
+  742, //Cutiefly
+  747, //Mareanie
+  775, //Komala
   7, //Squirtle
-  431, //Glameow
+  32, //Nidoran?
+  39, //Jigglypuff
+  43, //Oddish
   56, //Mankey
-  324, //Torkoal
-  690, //Skrelp
-  283, //Surskit
-  403, //Shinx
-  720, //Hoopa
-  441, //Chatot
-  714, //Noibat
-  167, //Spinarak
-  438, //Bonsly
-  261, //Poochyena
-  231, //Phanpy
-  264, //Linoone
-  211, //Qwilfish
-  498, //Tepig
-  515, //Panpour
-  744, //Rockruff
-  767, //Wimpod
-  629, //Vullaby
+  100, //Voltorb
+  140, //Kabuto
   155, //Cyndaquil
-  759, //Stufful
-  436, //Bronzor
-  548, //Petilil
-  624, //Pawniard
-  737, //Charjabug
+  167, //Spinarak
+  170, //Chinchou
+  198, //Murkrow
+  201, //Unown
+  211, //Qwilfish
+  231, //Phanpy
+  252, //Treecko
+  261, //Poochyena
+  264, //Linoone
+  270, //Lotad
+  273, //Seedot
+  283, //Surskit
+  290, //Nincada
+  302, //Sableye
+  324, //Torkoal
+  343, //Baltoy
+  390, //Chimchar
+  399, //Bidoof
+  403, //Shinx
   410, //Shieldon
-  601, //Klinklang
-  228, //Houndour
-  600, //Klang
-  27, //Sandshrew
-  674, //Pancham
-  266, //Silcoon
-  246, //Larvitar
-  309, //Electrike
+  413, //Wormadam
+  421, //Cherrim
+  431, //Glameow
+  436, //Bronzor
+  438, //Bonsly
+  441, //Chatot
+  498, //Tepig
+  501, //Oshawott
+  504, //Patrat
+  515, //Panpour
+  535, //Tympole
+  541, //Swadloon
+  548, //Petilil
+  562, //Yamask
+  566, //Archen
+  573, //Cinccino
+  580, //Ducklett
+  588, //Karrablast
+  605, //Elgyem
+  613, //Cubchoo
+  624, //Pawniard
+  627, //Rufflet
+  629, //Vullaby
+  688, //Binacle
+  690, //Skrelp
+  692, //Clauncher
+  694, //Helioptile
+  714, //Noibat
+  720, //Hoopa
+  737, //Charjabug
+  744, //Rockruff
+  759, //Stufful
+  767, //Wimpod
+  769, //Sandygast
   4, //Charmander
-  118, //Goldeen
-  610, //Axew
-  293, //Whismur
-  37, //Vulpix
-  222, //Corsola
-  757, //Salandit
-  233, //Porygon2
-  591, //Amoonguss
-  446, //Munchlax
-  559, //Scraggy
-  520, //Tranquill
-  176, //Togetic
-  495, //Snivy
-  648, //Meloetta
-  349, //Feebas
-  511, //Pansage
-  678, //Meowstic
-  585, //Deerling
-  554, //Darumaka
-  179, //Mareep
-  440, //Happiny
-  303, //Mawile
-  513, //Pansear
-  158, //Totodile
-  341, //Corphish
-  300, //Skitty
   14, //Kakuna
-  370, //Luvdisc
-  568, //Trubbish
-  223, //Remoraid
+  27, //Sandshrew
   35, //Clefairy
-  109, //Koffing
-  729, //Brionne
-  278, //Wingull
-  371, //Bagon
-  397, //Staravia
-  239, //Elekid
-  213, //Shuckle
-  532, //Timburr
-  216, //Teddiursa
-  578, //Duosion
-  188, //Skiploom
-  741, //Oricorio
-  353, //Shuppet
-  597, //Ferroseed
-  657, //Frogadier
-  358, //Chimecho
-  732, //Trumbeak
+  37, //Vulpix
   60, //Poliwag
-  667, //Litleo
-  608, //Lampent
-  307, //Meditite
-  439, //Mime Jr.
-  360, //Wynaut
-  251, //Celebi
-  314, //Illumise
-  374, //Beldum
+  109, //Koffing
+  118, //Goldeen
+  158, //Totodile
+  176, //Togetic
+  179, //Mareep
+  188, //Skiploom
   204, //Pineco
-  517, //Munna
-  782, //Jangmo-o
   209, //Snubbull
+  213, //Shuckle
+  216, //Teddiursa
+  222, //Corsola
+  223, //Remoraid
+  228, //Houndour
+  233, //Porygon2
+  239, //Elekid
+  246, //Larvitar
+  251, //Celebi
+  266, //Silcoon
+  278, //Wingull
+  293, //Whismur
+  300, //Skitty
+  303, //Mawile
+  307, //Meditite
+  309, //Electrike
+  314, //Illumise
+  341, //Corphish
+  349, //Feebas
+  353, //Shuppet
+  358, //Chimecho
+  360, //Wynaut
+  370, //Luvdisc
+  371, //Bagon
+  374, //Beldum
+  397, //Staravia
+  439, //Mime Jr.
+  440, //Happiny
+  446, //Munchlax
+  495, //Snivy
+  511, //Pansage
+  513, //Pansear
+  517, //Munna
+  520, //Tranquill
+  532, //Timburr
+  554, //Darumaka
+  559, //Scraggy
+  568, //Trubbish
+  578, //Duosion
+  585, //Deerling
+  591, //Amoonguss
+  597, //Ferroseed
+  600, //Klang
+  601, //Klinklang
+  608, //Lampent
+  610, //Axew
+  648, //Meloetta
+  657, //Frogadier
+  667, //Litleo
+  674, //Pancham
+  678, //Meowstic
+  729, //Brionne
+  732, //Trumbeak
   739, //Crabrawler
-  325, //Spoink
-  748, //Toxapex
-  719, //Diancie
-  328, //Trapinch
+  741, //Oricorio
+  757, //Salandit
+  782, //Jangmo-o
+  1, //Bulbasaur
+  11, //Metapod
+  20, //Raticate
+  51, //Dugtrio
+  58, //Growlithe
+  69, //Bellsprout
+  163, //Hoothoot
+  200, //Misdreavus
+  218, //Slugma
+  236, //Tyrogue
   240, //Magby
+  259, //Marshtomp
+  268, //Cascoon
+  277, //Swellow
+  313, //Volbeat
+  322, //Numel
+  325, //Spoink
+  328, //Trapinch
+  347, //Anorith
+  361, //Snorunt
+  418, //Buizel
   443, //Gible
   447, //Riolu
-  218, //Slugma
-  735, //Gumshoos
+  530, //Excadrill
+  547, //Whimsicott
+  551, //Sandile
+  564, //Tirtouga
+  570, //Zorua
+  575, //Gothorita
+  618, //Stunfisk
+  651, //Quilladin
+  662, //Fletchindr
+  719, //Diancie
   723, //Dartrix
   726, //Torracat
-  361, //Snorunt
-  570, //Zorua
-  11, //Metapod
-  802, //Marshadow
-  575, //Gothorita
-  268, //Cascoon
-  58, //Growlithe
-  1, //Bulbasaur
-  564, //Tirtouga
-  618, //Stunfisk
+  735, //Gumshoos
+  748, //Toxapex
   762, //Steenee
-  530, //Excadrill
-  322, //Numel
-  259, //Marshtomp
-  651, //Quilladin
-  51, //Dugtrio
-  347, //Anorith
-  20, //Raticate
-  277, //Swellow
-  236, //Tyrogue
-  163, //Hoothoot
-  313, //Volbeat
-  547, //Whimsicott
-  69, //Bellsprout
-  418, //Buizel
-  200, //Misdreavus
-  551, //Sandile
-  662, //Fletchindr
-  66, //Machop
-  190, //Aipom
+  802, //Marshadow
   26, //Raichu
-  318, //Carvanha
-  219, //Magcargo
-  363, //Spheal
-  281, //Kirlia
-  189, //Jumpluff
-  135, //Jolteon
-  596, //Galvantula
-  120, //Staryu
-  617, //Accelgor
+  30, //Nidorina
+  41, //Zubat
+  44, //Gloom
   54, //Psyduck
-  394, //Prinplup
-  453, //Croagunk
-  355, //Duskull
+  66, //Machop
+  83, //Farfetch’d
+  120, //Staryu
+  135, //Jolteon
+  137, //Porygon
+  161, //Sentret
+  180, //Flaaffy
+  184, //Azumarill
+  189, //Jumpluff
+  190, //Aipom
+  192, //Sunflora
+  219, //Magcargo
+  281, //Kirlia
+  284, //Masquerain
   287, //Slakoth
   291, //Ninjask
-  184, //Azumarill
-  496, //Servine
-  451, //Skorupi
-  680, //Doublade
-  502, //Dewott
-  743, //Ribombee
-  449, //Hippopotas
-  30, //Nidorina
-  471, //Glaceon
-  685, //Slurpuff
-  633, //Deino
-  192, //Sunflora
-  180, //Flaaffy
-  284, //Masquerain
-  701, //Hawlucha
-  137, //Porygon
   292, //Shedinja
-  696, //Tyrunt
-  536, //Palpitoad
-  705, //Sliggoo
-  683, //Aromatisse
-  161, //Sentret
-  679, //Honedge
-  44, //Gloom
-  41, //Zubat
-  83, //Farfetch’d
-  745, //Lycanroc
+  318, //Carvanha
+  355, //Duskull
+  363, //Spheal
+  394, //Prinplup
+  449, //Hippopotas
+  451, //Skorupi
+  453, //Croagunk
+  471, //Glaceon
+  496, //Servine
+  502, //Dewott
   522, //Blitzle
-  672, //Skiddo
-  224, //Octillery
-  129, //Magikarp
-  525, //Boldore
-  619, //Mienfoo
-  711, //Gourgeist
-  305, //Lairon
-  429, //Mismagius
-  215, //Sneasel
+  536, //Palpitoad
+  596, //Galvantula
+  617, //Accelgor
+  633, //Deino
+  679, //Honedge
+  680, //Doublade
+  683, //Aromatisse
+  685, //Slurpuff
+  696, //Tyrunt
+  701, //Hawlucha
+  705, //Sliggoo
+  743, //Ribombee
+  745, //Lycanroc
   33, //Nidorino
-  474, //Porygon-Z
-  407, //Roserade
-  88, //Grimer
-  430, //Honchkrow
-  156, //Quilava
-  408, //Cranidos
-  423, //Gastrodon
-  256, //Combusken
-  196, //Espeon
-  326, //Grumpig
-  414, //Mothim
-  528, //Swoobat
-  136, //Flareon
-  754, //Lurantis
   63, //Abra
-  274, //Nuzleaf
   72, //Tentacool
-  779, //Bruxish
-  404, //Luxio
-  340, //Whiscash
-  253, //Grovyle
-  225, //Delibird
+  88, //Grimer
+  129, //Magikarp
+  136, //Flareon
   152, //Chikorita
+  156, //Quilava
+  196, //Espeon
+  215, //Sneasel
+  224, //Octillery
+  225, //Delibird
+  253, //Grovyle
+  256, //Combusken
+  274, //Nuzleaf
+  305, //Lairon
+  326, //Grumpig
+  340, //Whiscash
   391, //Monferno
+  404, //Luxio
+  407, //Roserade
+  408, //Cranidos
+  414, //Mothim
+  423, //Gastrodon
+  429, //Mismagius
+  430, //Honchkrow
+  474, //Porygon-Z
   507, //Herdier
-  516, //Simipour
-  609, //Chandelure
-  458, //Mantyke
-  114, //Tangela
+  525, //Boldore
+  528, //Swoobat
+  619, //Mienfoo
+  672, //Skiddo
+  711, //Gourgeist
+  754, //Lurantis
+  779, //Bruxish
+  2, //Ivysaur
+  8, //Wartortle
+  9, //Blastoise
   15, //Beedrill
-  556, //Maractus
-  262, //Mightyena
-  75, //Graveler
-  296, //Makuhita
-  459, //Snover
-  197, //Umbreon
-  77, //Ponyta
-  432, //Purugly
-  550, //Basculin
-  749, //Mudbray
-  435, //Skuntank
+  28, //Sandslash
+  40, //Wigglytuff
+  47, //Parasect
+  48, //Venonat
   53, //Persian
+  57, //Primeape
+  61, //Poliwhirl
+  70, //Weepinbell
+  75, //Graveler
+  77, //Ponyta
+  82, //Magneton
+  96, //Drowzee
   105, //Marowak
-  598, //Ferrothorn
-  660, //Diggersby
-  700, //Sylveon
+  111, //Rhyhorn
+  114, //Tangela
+  134, //Vaporeon
+  139, //Omastar
+  165, //Ledyba
+  197, //Umbreon
+  262, //Mightyena
+  267, //Beautifly
+  294, //Loudred
+  296, //Makuhita
   299, //Nosepass
   337, //Lunatone
-  622, //Golett
-  134, //Vaporeon
-  165, //Ledyba
-  70, //Weepinbell
-  654, //Braixen
-  442, //Spiritomb
-  695, //Heliolisk
-  111, //Rhyhorn
-  400, //Bibarel
   345, //Lileep
-  611, //Fraxure
-  28, //Sandslash
-  8, //Wartortle
-  48, //Venonat
-  82, //Magneton
-  579, //Reuniclus
-  589, //Escavalier
-  57, //Primeape
+  352, //Kecleon
+  369, //Relicanth
+  400, //Bibarel
+  402, //Kricketune
+  432, //Purugly
+  435, //Skuntank
+  442, //Spiritomb
+  458, //Mantyke
+  459, //Snover
+  470, //Leafeon
   499, //Pignite
   514, //Simisear
-  267, //Beautifly
-  139, //Omastar
-  756, //Shiinotic
-  294, //Loudred
-  369, //Relicanth
-  2, //Ivysaur
-  352, //Kecleon
-  712, //Bergmite
-  470, //Leafeon
-  9, //Blastoise
-  40, //Wigglytuff
-  402, //Kricketune
-  606, //Beheeyem
-  47, //Parasect
+  516, //Simipour
+  550, //Basculin
   552, //Krokorok
+  556, //Maractus
+  579, //Reuniclus
+  589, //Escavalier
+  598, //Ferrothorn
+  606, //Beheeyem
+  609, //Chandelure
+  611, //Fraxure
+  622, //Golett
+  654, //Braixen
+  660, //Diggersby
+  695, //Heliolisk
+  700, //Sylveon
+  712, //Bergmite
+  749, //Mudbray
+  756, //Shiinotic
   801, //Magearna
-  61, //Poliwhirl
-  512, //Simisage
   5, //Charmeleon
-  301, //Delcatty
-  671, //Florges
-  372, //Shelgon
   12, //Butterfree
-  125, //Electabuzz
   17, //Pidgeotto
-  113, //Chansey
-  159, //Croconaw
-  560, //Scrafty
-  354, //Banette
-  733, //Toucannon
-  388, //Grotle
-  461, //Weavile
-  531, //Audino
-  615, //Cryogonal
-  207, //Gligar
-  327, //Spinda
-  186, //Politoed
-  419, //Floatzel
-  549, //Lilligant
-  518, //Musharna
-  505, //Watchog
-  334, //Altaria
-  510, //Liepard
-  636, //Larvesta
-  329, //Vibrava
-  342, //Crawdaunt
-  364, //Sealeo
-  232, //Donphan
-  583, //Vanillish
-  86, //Seel
-  121, //Starmie
   38, //Ninetales
+  86, //Seel
+  113, //Chansey
+  121, //Starmie
+  125, //Electabuzz
+  159, //Croconaw
   168, //Ariados
+  186, //Politoed
+  207, //Gligar
   221, //Piloswine
-  79, //Slowpoke
+  232, //Donphan
+  301, //Delcatty
+  327, //Spinda
+  329, //Vibrava
+  334, //Altaria
+  342, //Crawdaunt
+  354, //Banette
+  364, //Sealeo
+  372, //Shelgon
+  388, //Grotle
+  419, //Floatzel
+  461, //Weavile
+  505, //Watchog
+  510, //Liepard
+  512, //Simisage
+  518, //Musharna
+  531, //Audino
+  549, //Lilligant
+  560, //Scrafty
+  583, //Vanillish
+  615, //Cryogonal
+  636, //Larvesta
+  671, //Florges
+  733, //Toucannon
+  22, //Fearow
   45, //Vileplume
-  786, //Tapu Lele
-  247, //Pupitar
-  448, //Lucario
-  153, //Bayleef
-  269, //Dustox
+  79, //Slowpoke
   89, //Muk
-  457, //Lumineon
-  271, //Lombre
   101, //Electrode
-  544, //Whirlipede
-  793, //Nihilego
+  108, //Lickitung
+  110, //Weezing
+  117, //Seadra
+  153, //Bayleef
+  171, //Lanturn
+  185, //Sudowoodo
+  193, //Yanma
   205, //Forretress
+  235, //Smeargle
+  241, //Miltank
+  247, //Pupitar
+  269, //Dustox
+  271, //Lombre
+  279, //Pelipper
+  286, //Breloom
   338, //Solrock
+  359, //Absol
+  375, //Metang
+  392, //Infernape
+  398, //Staraptor
   416, //Vespiquen
   424, //Ambipom
-  241, //Miltank
-  375, //Metang
-  428, //Lopunny
   426, //Drifblim
-  359, //Absol
-  542, //Leavanny
-  758, //Salazzle
-  193, //Yanma
-  763, //Tsareena
-  663, //Talonflame
-  565, //Carracosta
-  171, //Lanturn
-  22, //Fearow
-  676, //Furfrou
-  235, //Smeargle
-  594, //Alomomola
+  428, //Lopunny
+  448, //Lucario
+  457, //Lumineon
   462, //Magnezone
-  392, //Infernape
-  666, //Vivillon
-  286, //Breloom
   508, //Stoutland
-  185, //Sudowoodo
-  117, //Seadra
-  533, //Gurdurr
-  783, //Hakamo-o
-  279, //Pelipper
-  592, //Frillish
-  398, //Staraptor
-  630, //Mandibuzz
-  108, //Lickitung
-  603, //Eelektrik
-  110, //Weezing
   521, //Unfezant
-  64, //Kadabra
-  332, //Cacturne
-  538, //Throh
-  308, //Medicham
-  581, //Swanna
-  119, //Seaking
-  36, //Clefable
-  411, //Bastiodon
-  437, //Bronzong
-  788, //Tapu Fini
-  452, //Drapion
-  698, //Amaura
-  275, //Shiftry
-  555, //Darmanitan
-  689, //Barbaracle
-  478, //Froslass
-  770, //Palossand
-  122, //Mr. Mime
+  533, //Gurdurr
+  542, //Leavanny
+  544, //Whirlipede
+  565, //Carracosta
+  592, //Frillish
+  594, //Alomomola
+  603, //Eelektrik
+  630, //Mandibuzz
+  663, //Talonflame
+  666, //Vivillon
+  676, //Furfrou
+  758, //Salazzle
+  763, //Tsareena
+  783, //Hakamo-o
+  786, //Tapu Lele
+  793, //Nihilego
   31, //Nidoqueen
-  454, //Toxicroak
-  584, //Vanilluxe
+  36, //Clefable
   62, //Poliwrath
+  64, //Kadabra
+  92, //Gastly
+  99, //Kingler
+  119, //Seaking
+  122, //Mr. Mime
+  126, //Magmar
   141, //Kabutops
   202, //Wobbuffet
-  693, //Clawitzer
+  275, //Shiftry
+  308, //Medicham
+  332, //Cacturne
   335, //Zangoose
-  126, //Magmar
-  195, //Quagsire
-  288, //Vigoroth
+  411, //Bastiodon
+  437, //Bronzong
+  452, //Drapion
+  454, //Toxicroak
+  478, //Froslass
+  538, //Throh
+  555, //Darmanitan
+  581, //Swanna
+  584, //Vanilluxe
+  689, //Barbaracle
+  693, //Clawitzer
+  698, //Amaura
+  770, //Palossand
+  788, //Tapu Fini
+  34, //Nidoking
+  76, //Golem
+  84, //Doduo
+  107, //Hitmonchan
+  124, //Jynx
+  128, //Tauros
   166, //Ledian
   181, //Ampharos
-  647, //Keldeo
-  237, //Hitmontop
-  107, //Hitmonchan
-  620, //Mienshao
-  128, //Tauros
-  455, //Carnivine
-  558, //Crustle
-  631, //Heatmor
-  234, //Stantler
-  229, //Houndoom
-  561, //Sigilyph
-  34, //Nidoking
-  365, //Walrein
-  76, //Golem
-  634, //Zweilous
-  124, //Jynx
+  195, //Quagsire
   210, //Granbull
-  534, //Conkeldurr
-  444, //Gabite
-  539, //Sawk
-  476, //Probopass
-  405, //Luxray
+  229, //Houndoom
+  234, //Stantler
+  237, //Hitmontop
+  288, //Vigoroth
+  365, //Walrein
   380, //Latias
-  84, //Doduo
+  405, //Luxray
+  444, //Gabite
+  455, //Carnivine
+  476, //Probopass
+  534, //Conkeldurr
+  539, //Sawk
+  558, //Crustle
+  561, //Sigilyph
   567, //Archeops
-  206, //Dunsparce
-  346, //Cradily
-  649, //Genesect
+  620, //Mienshao
+  631, //Heatmor
+  634, //Zweilous
+  647, //Keldeo
   18, //Pidgeot
-  642, //Thundurus
-  553, //Krookodile
-  687, //Malamar
-  127, //Pinsir
-  65, //Alakazam
-  178, //Xatu
-  242, //Blissey
-  576, //Gothitelle
-  709, //Trevenant
-  738, //Vikavolt
-  537, //Seismitoad
-  123, //Scyther
-  348, //Armaldo
-  503, //Samurott
-  491, //Darkrai
-  295, //Exploud
-  765, //Oranguru
-  106, //Hitmonlee
-  344, //Claydol
-  67, //Machoke
-  373, //Salamence
-  628, //Braviary
-  260, //Swampert
-  214, //Heracross
-  203, //Girafarig
-  310, //Manectric
-  468, //Togekiss
-  655, //Delphox
-  715, //Noivern
-  668, //Pyroar
   49, //Venomoth
-  658, //Greninja
-  362, //Glalie
-  488, //Cresselia
-  641, //Tornadus
-  645, //Landorus
-  272, //Ludicolo
-  93, //Haunter
-  42, //Golbat
-  99, //Kingler
-  571, //Zoroark
-  94, //Gengar
-  652, //Chesnaught
-  356, //Dusclops
-  96, //Drowzee
-  637, //Volcarona
+  65, //Alakazam
+  67, //Machoke
   91, //Cloyster
-  282, //Gardevoir
-  626, //Bouffalant
-  523, //Zebstrika
-  409, //Rampardos
-  500, //Emboar
-  98, //Krabby
-  784, //Kommo-o
-  376, //Metagross
-  625, //Bisharp
-  92, //Gastly
-  621, //Druddigon
-  90, //Shellder
-  475, //Gallade
-  73, //Tentacruel
-  97, //Hypno
-  95, //Onix
-  724, //Decidueye
-  467, //Magmortar
-  164, //Noctowl
+  94, //Gengar
+  106, //Hitmonlee
+  123, //Scyther
+  127, //Pinsir
+  178, //Xatu
+  203, //Girafarig
+  206, //Dunsparce
+  214, //Heracross
+  242, //Blissey
+  260, //Swampert
+  272, //Ludicolo
+  295, //Exploud
+  310, //Manectric
+  344, //Claydol
+  346, //Cradily
+  348, //Armaldo
+  362, //Glalie
+  373, //Salamence
+  468, //Togekiss
+  488, //Cresselia
+  491, //Darkrai
+  503, //Samurott
+  537, //Seismitoad
+  553, //Krookodile
+  576, //Gothitelle
+  628, //Braviary
+  641, //Tornadus
+  642, //Thundurus
+  645, //Landorus
+  649, //Genesect
+  655, //Delphox
+  658, //Greninja
+  668, //Pyroar
+  687, //Malamar
+  709, //Trevenant
+  715, //Noivern
+  738, //Vikavolt
+  765, //Oranguru
+  42, //Golbat
   68, //Machamp
-  145, //Zapdos
+  73, //Tentacruel
   80, //Slowbro
+  93, //Haunter
+  97, //Hypno
+  145, //Zapdos
+  164, //Noctowl
+  282, //Gardevoir
+  356, //Dusclops
+  376, //Metagross
+  409, //Rampardos
+  467, //Magmortar
+  475, //Gallade
+  500, //Emboar
+  523, //Zebstrika
+  571, //Zoroark
+  621, //Druddigon
+  625, //Bisharp
+  626, //Bouffalant
+  637, //Volcarona
+  652, //Chesnaught
+  724, //Decidueye
+  784, //Kommo-o
+  6, //Charizard
+  55, //Golduck
+  71, //Victreebel
   78, //Rapidash
   87, //Dewgong
-  563, //Cofagrigus
-  386, //Deoxys
-  740, //Crabomable
-  367, //Huntail
-  463, //Lickilicky
-  227, //Skarmory
-  6, //Charizard
-  526, //Gigalith
   144, //Articuno
-  681, //Aegislash
-  254, //Sceptile
-  55, //Golduck
-  317, //Swalot
   157, //Typhlosion
-  721, //Volcanion
-  673, //Gogoat
-  485, //Heatran
+  227, //Skarmory
+  254, //Sceptile
+  317, //Swalot
+  367, //Huntail
   377, //Regirock
-  71, //Victreebel
+  386, //Deoxys
   395, //Empoleon
-  169, //Crobat
-  795, //Pheromosa
-  319, //Sharpedo
-  230, //Kingdra
-  466, //Electivire
-  730, //Primarina
-  162, //Furret
-  212, //Scizor
-  691, //Dragalge
-  142, //Aerodactyl
-  635, //Hydreigon
-  378, //Regice
+  463, //Lickilicky
+  485, //Heatran
+  526, //Gigalith
+  563, //Cofagrigus
+  673, //Gogoat
+  681, //Aegislash
+  721, //Volcanion
+  740, //Crabomable
   85, //Dodrio
-  154, //Meganium
+  142, //Aerodactyl
   147, //Dratini
-  752, //Araquanid
-  612, //Haxorus
+  154, //Meganium
+  162, //Furret
+  169, //Crobat
+  212, //Scizor
   217, //Ursaring
-  785, //Tapu Koko
+  230, //Kingdra
+  319, //Sharpedo
   368, //Gorebyss
+  378, //Regice
+  466, //Electivire
+  612, //Haxorus
+  635, //Hydreigon
+  691, //Dragalge
   727, //Incineroar
+  730, //Primarina
+  752, //Araquanid
+  785, //Tapu Koko
+  795, //Pheromosa
+  59, //Arcanine
   112, //Rhydon
-  772, //Type: Null
-  469, //Yanmega
+  243, //Raikou
   257, //Blaziken
   323, //Camerupt
-  243, //Raikou
-  787, //Tapu Bulu
   379, //Registeel
-  639, //Terrakion
-  59, //Arcanine
-  586, //Sawsbuck
   445, //Garchomp
+  469, //Yanmega
   569, //Garbodor
-  713, //Avalugg
+  586, //Sawsbuck
+  639, //Terrakion
+  772, //Type: Null
+  787, //Tapu Bulu
+  3, //Venusaur
+  23, //Ekans
+  103, //Exeggutor
+  146, //Moltres
+  150, //Mewtwo
+  199, //Slowking
   245, //Suicune
-  472, //Gliscor
-  776, //Turtonator
+  248, //Tyranitar
   289, //Slaking
   320, //Wailmer
-  768, //Golisopod
   330, //Flygon
-  23, //Ekans
-  199, //Slowking
-  150, //Mewtwo
-  381, //Latios
-  465, //Tangrowth
-  103, //Exeggutor
-  248, //Tyranitar
-  640, //Virizion
-  766, //Passimian
-  146, //Moltres
-  3, //Venusaur
-  706, //Goodra
-  450, //Hippowdon
   357, //Tropius
-  675, //Pangoro
-  604, //Eelektross
+  381, //Latios
+  450, //Hippowdon
+  465, //Tangrowth
+  472, //Gliscor
+  640, //Virizion
+  706, //Goodra
+  713, //Avalugg
+  766, //Passimian
+  768, //Golisopod
+  776, //Turtonator
+  143, //Snorlax
   226, //Mantine
-  760, //Bewear
   244, //Entei
   306, //Aggron
-  143, //Snorlax
+  604, //Eelektross
   638, //Cobalion
-  593, //Jellicent
+  675, //Pangoro
+  760, //Bewear
+  115, //Kangaskhan
   149, //Dragonite
   389, //Torterra
   460, //Abomasnow
   477, //Dusknoir
-  115, //Kangaskhan
+  593, //Jellicent
+  160, //Feraligatr
   297, //Hariyama
   773, //Silvally
-  160, //Feraligatr
+  464, //Rhyperior
   794, //Buzzwole
   800, //Necrozma
-  464, //Rhyperior
-  697, //Tyrantrum
   131, //Lapras
   473, //Mamoswine
-  750, //Mudsdale
   545, //Scolipede
+  697, //Tyrantrum
+  750, //Mudsdale
   614, //Beartic
-  699, //Aurorus
   336, //Seviper
+  699, //Aurorus
   623, //Golurk
   644, //Zekrom
+  646, //Kyurem
   716, //Xerneas
   780, //Drampa
-  646, //Kyurem
-  643, //Reshiram
   493, //Arceus
+  643, //Reshiram
   497, //Serperior
   791, //Solgaleo
-  383, //Groudon
   24, //Arbok
+  383, //Groudon
   486, //Regigigas
-  796, //Xurkitree
   250, //Ho-oh
+  796, //Xurkitree
   781, //Dhelmise
   148, //Dragonair
   792, //Lunala
   484, //Palkia
-  487, //Giratina
   382, //Kyogre
+  487, //Giratina
   718, //Zygarde
   249, //Lugia
   483, //Dialga
@@ -2410,6 +2409,7 @@ const u16 gPokedexOrder_Height[] =
   350, //Milotic
   130, //Gyarados
   384, //Rayquaza
+  95, //Onix
   208, //Steelix
   797, //Celesteela
   321, //Wailord

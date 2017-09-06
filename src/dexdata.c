@@ -176,25 +176,25 @@ const u8 gGrimerDescription[] = _("Born from polluted sludge in the sea,\nGrimer
 
 const u8 gMukDescription[] = _("It prefers warm and humid habitats.\nIn the summertime, the toxic substances\nin its body intensify, making Muk reek like\nputrid kitchen garbage.");
 
-const u8 gShellderDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gShellderDescription[] = _("At night, it burrows a hole in the seafloor\nwith its broad tongue to make a place to\nsleep. While asleep, it closes its shell,\nbut leaves its tongue hanging out.");
 
-const u8 gCloysterDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gCloysterDescription[] = _("It swims in the sea by swallowing water,\nthen jetting it out toward the read.\nThe Cloyster shoots spikes from its\nshell using the same system.");
 
-const u8 gGastlyDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gGastlyDescription[] = _("When exposed to a strong wind, a Gastly’s\ngaseous body quickly dwindles away.\nThey cluster under the eaves of houses\nto escape the ravages of wind.");
 
-const u8 gHaunterDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gHaunterDescription[] = _("If a Haunter beckons you whole it is\nfloating in darkness, don’t approach it.\nThis Pokémon will try to lick you with its\ntongue and steal your life away.");
 
-const u8 gGengarDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gGengarDescription[] = _("Deep in the night, your shadow cast by\na streetlight may suddenly overtake you.\nIt is actually a Gengar running past\nyou, pretending to be your shadow.");
 
-const u8 gOnixDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gOnixDescription[] = _("There is a magnet in its brain that\nprevents an Onix from losing direction\nwhile tunneling. As it grows older, its body\nbecomes steadily rounder and smoother.");
 
-const u8 gDrowzeeDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gDrowzeeDescription[] = _("If your nose becomes itchy while you are\nsleeping, it’s a sure sign that a Drowzee is\nstanding above your pillow and trying to\neat your dream through your nostrils.");
 
-const u8 gHypnoDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gHypnoDescription[] = _("The arcing movement and glitter of the\npendulum in a Hypno’s hand lull the foe\ninto deep hypnosis. While searching for\nprey, it polishes the pendulum.");
 
-const u8 gKrabbyDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gKrabbyDescription[] = _("Krabby live in holes dug into beaches.\nOn sandy shores with little in the way\nof food, they can be seen squabbling with\neach other over territory.");
 
-const u8 gKinglerDescription[] = _("Its tail has a Shellder firmly attached\nwith a bite. As a result, the tail can’t be\nused for fishing anymore. This forces it\nto reluctantly swim and catch prey.");
+const u8 gKinglerDescription[] = _("It waves its huge, oversized claw in the\nair to communicate with others.\nBut since the claw is so heavy, this\nPokémon quickly tires.");
 
 const u8 gVoltorbDescription[] = _("It bears an uncanny and unexplained\nresemblance to a Poké Ball. Because it\nexplodes at the slightest shock, even\nveteran Trainers treat it with caution.");
 
@@ -2477,104 +2477,104 @@ const struct PokedexEntry gPokedexEntries[]= {
         .trainerOffset = -1,
     },
     {  //shellder
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Bivalve"),
+        .height = 3,
+        .weight = 40,
         .description = gShellderDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 675,
+        .pokemonOffset = 24,
+        .trainerScale = 256,
+        .trainerOffset = 0,
     },
     {  //cloyster
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Bivalve"),
+        .height = 15,
+        .weight = 1325,
         .description = gCloysterDescription,
         .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonOffset = 1,
+        .trainerScale = 278,
+        .trainerOffset = 0,
     },
     {  //gastly
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Gas"),
+        .height = 13,
+        .weight = 1,
         .description = gGastlyDescription,
-        .pokemonScale = 256,
+        .pokemonScale = 232,
         .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .trainerScale = 312,
+        .trainerOffset = 0,
     },
     {  //haunter
-        .categoryName = _("Hermit Crab"),
+        .categoryName = _("Gas"),
         .height = 16,
-        .weight = 785,
+        .weight = 1,
         .description = gHaunterDescription,
         .pokemonScale = 256,
         .pokemonOffset = 2,
-        .trainerScale = 296,
+        .trainerScale = 342,
         .trainerOffset = 1,
     },
     {  //gengar
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Shadow"),
+        .height = 15,
+        .weight = 405,
         .description = gGengarDescription,
         .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
+        .pokemonOffset = 3,
+        .trainerScale = 316,
         .trainerOffset = 1,
     },
     {  //onix
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Rock Snake"),
+        .height = 88,
+        .weight = 2100,
         .description = gOnixDescription,
         .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonOffset = 1,
+        .trainerScale = 542,
+        .trainerOffset = 14,
     },
     {  //drowzee
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Hypnosis"),
+        .height = 10,
+        .weight = 324,
         .description = gDrowzeeDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 296,
+        .pokemonOffset = 9,
+        .trainerScale = 256,
+        .trainerOffset = 0,
     },
     {  //hypno
-        .categoryName = _("Hermit Crab"),
+        .categoryName = _("Hypnosis"),
         .height = 16,
-        .weight = 785,
+        .weight = 756,
         .description = gHypnoDescription,
         .pokemonScale = 256,
         .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .trainerScale = 293,
+        .trainerOffset = 0,
     },
     {  //krabby
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("River Crab"),
+        .height = 4,
+        .weight = 65,
         .description = gKrabbyDescription,
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .pokemonScale = 469,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
     },
     {  //kingler
-        .categoryName = _("Hermit Crab"),
-        .height = 16,
-        .weight = 785,
+        .categoryName = _("Pincer"),
+        .height = 13,
+        .weight = 600,
         .description = gKinglerDescription,
         .pokemonScale = 256,
         .pokemonOffset = 2,
-        .trainerScale = 296,
-        .trainerOffset = 1,
+        .trainerScale = 320,
+        .trainerOffset = -2,
     },
     {  //voltorb
         .categoryName = _("Ball"),

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import os
 
 formatStr = '    //{}. {}\n'
 formatStr = formatStr + '    {{\n'
@@ -228,13 +229,13 @@ with open('src\\dex_order.c','w') as dexordering:
         dexordering.write('};\n')
 
         dexordering.write('const u16 gPokedexOrder_Weight[] = \n{\n')
-        dexDataSetByWeight = sorted(dexDataSet.items(), key=lambda x: x[1]["weight"])
+        dexDataSetByWeight = sorted(dexDataSet.items(), key=lambda x:(x[1]["weight"],x[1]["index"]))
         for entry in dexDataSetByWeight:
                 dexordering.write('  ' + str(dexDataSet[entry[0]]["index"])  + ', //' + dexDataSet[entry[0]]["name"]+'\n')
         dexordering.write('};\n')
 
         dexordering.write('const u16 gPokedexOrder_Height[] = \n{\n')
-        dexDataSetByHeight = sorted(dexDataSet.items(), key=lambda x: x[1]["height"])
+        dexDataSetByHeight = sorted(dexDataSet.items(), key=lambda x:(x[1]["height"],x[1]["index"]))
         for entry in dexDataSetByHeight:
                 dexordering.write('  ' + str(dexDataSet[entry[0]]["index"])  + ', //' + dexDataSet[entry[0]]["name"]+'\n')
         dexordering.write('};\n')
@@ -313,7 +314,10 @@ with open('src\\mon_graphics.s','w') as spritesFile, open('src\\mon_back_pic_tab
         shinyPalletFile.write(macro+'    .align 2\n.global gMonShinyPaletteTable\ngMonShinyPaletteTable:\n')
         stillFrontPicFile.write(macro+'    .align 2\n.global gMonFrontPicTable\ngMonFrontPicTable:\n')
         for i in range(0,1072):
-                numberFormat = "%04d" % 1
+                if os.path.exists('aseries\\PokemonSprites\\'+("%03d" % i)+'.png'):
+                        numberFormat = "%03d" % i
+                else:
+                        numberFormat = "%03d" % 0
                 entry = masterSlots[i]
                 index = str(entry["index"])
                 name = entry["key"].capitalize()
@@ -327,4 +331,5 @@ with open('src\\mon_graphics.s','w') as spritesFile, open('src\\mon_back_pic_tab
                 palletFile.write('obj_pal gMonPalette_'+name+' , '+str(i)+'\n')
                 shinyPalletFile.write('obj_pal gMonShinyPalette_'+name+' , '+str(i)+'\n')
                 stillFrontPicFile.write('obj_tiles gMonStillFrontPic_'+name+', 0x800, '+str(i)+'\n')
- 
+
+##Output Pokemon Altitude
