@@ -14730,7 +14730,7 @@ const struct BaseStats gBaseStats[]= {
         /* hidden */       47,
         /* padding2 */     0
     },
-    //527. porygon-z
+    //527. porygonz
     {
         /* base_hp */      85,
         /* base_atk */     80,
@@ -23354,7 +23354,7 @@ const struct BaseStats gBaseStats[]= {
         /* hidden */       0,
         /* padding2 */     0
     },
-    //835. jangmo-o
+    //835. jangmoo
     {
         /* base_hp */      45,
         /* base_atk */     55,

@@ -376,7 +376,7 @@
     "category": "Mouse", 
     "weight": 29.5
   }, 
-  "nidoran": {
+  "nidoranf": {
     "description": "Its highly toxic barbs are thought to have\\ndeveloped as protection for this small-\\nbodied Pok\u00e9mon. When enraged, it releases\\na horrible toxin from its horn.", 
     "height": 0.4, 
     "index": 29, 
@@ -415,7 +415,7 @@
     "category": "Drill", 
     "weight": 60.0
   }, 
-  "nidoran": {
+  "nidoranm": {
     "description": "The male Nidoran has developed muscles\\nthat freely move its ears in any direction.\\nEven the slightest sound does not escape\\nthis Pok\u00e9mon\u2019s notice.", 
     "height": 0.5, 
     "index": 32, 
@@ -8605,7 +8605,7 @@
     "category": "Tiny Robin", 
     "weight": 1.7
   }, 
-  "fletchindr": {
+  "fletchinder": {
     "description": "From its beak, it expels embers that set\\nthe tall grass on fire. Then it pounces on\\nany bewildered Pok\u00e9mon that pop out of\\nthe grass.", 
     "height": 0.7, 
     "index": 662, 
@@ -10061,7 +10061,7 @@
     "category": "Synthetic", 
     "weight": 100.5
   }, 
-  "minior": {
+  "miniormeteor": {
     "description": "Originally making its home in the ozone\\nlayer, it hurtles to the ground when the\\nshell encasing its body grows too heavy.\\nIt was born from mutated nanoparticles.", 
     "height": 0.3, 
     "index": 774, 

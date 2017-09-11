@@ -466,6 +466,7 @@ const u16 gPokedexOrder_Alphabetical[] =
   800, //Necrozma
   34, //Nidoking
   31, //Nidoqueen
+  29, //Nidoran?
   32, //Nidoran?
   30, //Nidorina
   33, //Nidorino
@@ -965,6 +966,7 @@ const u16 gPokedexOrder_Weight[] =
   759, //Stufful
   1, //Bulbasaur
   23, //Ekans
+  29, //Nidoran?
   656, //Froakie
   708, //Phantump
   739, //Crabrawler
@@ -1688,6 +1690,7 @@ const u16 gPokedexOrder_Height[] =
   777, //Togedemaru
   798, //Kartana
   25, //Pikachu
+  29, //Nidoran?
   52, //Meowth
   74, //Geodude
   98, //Krabby

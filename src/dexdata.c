@@ -58,9 +58,13 @@ const u8 gSandshrewDescription[] = _("When it curls up in a ball, it can make an
 
 const u8 gSandslashDescription[] = _("It curls up in a ball to protect itself from\nenemy attacks. It also curls up to prevent\nheatstroke during the daytime when\ntemperatures rise sharply.");
 
+const u8 gNidoranfDescription[] = _("Its highly toxic barbs are thought to have\ndeveloped as protection for this small-\nbodied Pokémon. When enraged, it releases\na horrible toxin from its horn.");
+
 const u8 gNidorinaDescription[] = _("When it is with its friends or\nfamily, its barbs are tucked away to\nprevent injury. It appears to become\nnervous if separated from the others.");
 
 const u8 gNidoqueenDescription[] = _("It is adept at sending foes flying with\nharsh tackles using its tough, scaly body.\nThis Pokémon is at its strongest when\nit is defending its young.");
+
+const u8 gNidoranmDescription[] = _("The male Nidoran has developed muscles\nthat freely move its ears in any direction.\nEven the slightest sound does not escape\nthis Pokémon’s notice.");
 
 const u8 gNidorinoDescription[] = _("Its horn is harder than a diamond.\nIf it senses a hostile presence, all the\nbarbs on its back bristle up at once, and it\nchallenges the foe with all its might.");
 
@@ -944,6 +948,8 @@ const u8 gGliscorDescription[] = _("Gliscor observes prey while hanging\nupside 
 
 const u8 gMamoswineDescription[] = _("A frozen Mamoswine was dug from ice\ndating back 10,000 years. It woke up to\nmuch amazement. This Pokémon has been\naround for a long, long, long time.");
 
+const u8 gPorygonzDescription[] = _("In order to create a more advanced\nPokémon, an additional program was\ninstalled, but apparently it contained a\ndefect that made it move oddly.");
+
 const u8 gGalladeDescription[] = _("A master of courtesy and swordsmanship,\nit fights using extending swords on its\nelbows when trying to protect someone.\nIt can sense what its foe is thinking.");
 
 const u8 gProbopassDescription[] = _("It freely controls three units called\nMini-Noses using magnetic force.\nWith them, it can attack its foes from\nthree directions.");
@@ -1318,6 +1324,8 @@ const u8 gDiggersbyDescription[] = _("With its powerful ears it reduces dense\nb
 
 const u8 gFletchlingDescription[] = _("This amiable Pokémon is easy to train.\nBut when battle is joined, it shows its\nferocious side. It’s merciless to\nintruders that enter its territory.");
 
+const u8 gFletchinderDescription[] = _("From its beak, it expels embers that set\nthe tall grass on fire. Then it pounces on\nany bewildered Pokémon that pop out of\nthe grass.");
+
 const u8 gTalonflameDescription[] = _("In the fever of an exciting battle, it\nshowers embers from the gaps between its\nfeathers and takes to the air. It finishes\nits prey off with a colossal kick.");
 
 const u8 gScatterbugDescription[] = _("When under attack from bird Pokémon,\nit spews a poisonous black powder that\ncauses paralysis on contact. Scatterbug\ncan live in any region or climate.");
@@ -1540,6 +1548,8 @@ const u8 gTypenullDescription[] = _("Due to the danger that this synthetic\nPok�
 
 const u8 gSilvallyDescription[] = _("Its trust in its partner awakens it.\nThis Pokémon is capable of changing its\ntype by equipping special memories, a\ntrait that is well displayed in battle.");
 
+const u8 gMiniormeteorDescription[] = _("Originally making its home in the ozone\nlayer, it hurtles to the ground when the\nshell encasing its body grows too heavy.\nIt was born from mutated nanoparticles.");
+
 const u8 gKomalaDescription[] = _("It is born asleep, and it dies asleep.\nAll its movements are apparently no more\nthan the results of it tossing and turning\nin its dreams.");
 
 const u8 gTurtonatorDescription[] = _("The shell on its back is chemically\nunstable and explodes violently if struck.\nThe hole in its stomach is its weak point.\nIt gushes fire from its nostrils.");
@@ -1553,6 +1563,8 @@ const u8 gBruxishDescription[] = _("It stuns its prey with its psychic powers\na
 const u8 gDrampaDescription[] = _("This Pokémon is friendly to people and\nloves children most of all. It comes from\ndeep in the mountains to play with\nchildren it likes in town.");
 
 const u8 gDhelmiseDescription[] = _("The soul of seaweed adrift in the waves\nbecame reborn as this Pokémon.\nIt maintains itself with new infusions of\nseabed detritus and seaweed.");
+
+const u8 gJangmooDescription[] = _("It expresses its feelings by smacking its\nscales. Metallic sounds echo through the\ntall mountains where Jangmo-o live. They\ngrow little by little battling one another.");
 
 const u8 gHakamooDescription[] = _("It sheds and regrows its scales on a\ncontinuous basis. The scales become\nharder each time they’re regrown. Its\nscaly punches tear its foes to shreds.");
 
@@ -1886,6 +1898,16 @@ const struct PokedexEntry gPokedexEntries[]= {
         .trainerScale = 256,
         .trainerOffset = -2,
     },
+    {  //nidoranf
+        .categoryName = _("Poison Pin"),
+        .height = 4,
+        .weight = 70,
+        .description = gNidoranfDescription,
+        .pokemonScale = 488,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
     {  //nidorina
         .categoryName = _("Poison Pin"),
         .height = 8,
@@ -1903,6 +1925,16 @@ const struct PokedexEntry gPokedexEntries[]= {
         .description = gNidoqueenDescription,
         .pokemonScale = 272,
         .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    {  //nidoranm
+        .categoryName = _("Poison Pin"),
+        .height = 5,
+        .weight = 90,
+        .description = gNidoranmDescription,
+        .pokemonScale = 511,
+        .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
@@ -6316,6 +6348,16 @@ const struct PokedexEntry gPokedexEntries[]= {
         .trainerScale = 432,
         .trainerOffset = 5,
     },
+    {  //porygonz
+        .categoryName = _("Virtual"),
+        .height = 9,
+        .weight = 340,
+        .description = gPorygonzDescription,
+        .pokemonScale = 392,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
     {  //gallade
         .categoryName = _("Blade"),
         .height = 16,
@@ -8186,6 +8228,16 @@ const struct PokedexEntry gPokedexEntries[]= {
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    {  //fletchinder
+        .categoryName = _("Ember"),
+        .height = 7,
+        .weight = 160,
+        .description = gFletchinderDescription,
+        .pokemonScale = 388,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
     {  //talonflame
         .categoryName = _("Scorching"),
         .height = 12,
@@ -9296,6 +9348,16 @@ const struct PokedexEntry gPokedexEntries[]= {
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    {  //miniormeteor
+        .categoryName = _("Meteor"),
+        .height = 3,
+        .weight = 400,
+        .description = gMiniormeteorDescription,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
     {  //komala
         .categoryName = _("Drowsing"),
         .height = 4,
@@ -9361,6 +9423,16 @@ const struct PokedexEntry gPokedexEntries[]= {
         .height = 39,
         .weight = 2100,
         .description = gDhelmiseDescription,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    {  //jangmoo
+        .categoryName = _("Scaly"),
+        .height = 6,
+        .weight = 297,
+        .description = gJangmooDescription,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
